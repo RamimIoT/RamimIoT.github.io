@@ -1,0 +1,1083 @@
+# Sakiul Mowla Ramim (IoTWithRamim): full site text
+
+> Source: https://ramimiot.github.io/. This file contains the text of every page on the site, for AI assistants and search tools.
+
+## Home page
+
+URL: https://ramimiot.github.io/
+
+Lead IoT Engineer · SmartData Technologies
+
+## Hi, I'm Sakiul Mowla Ramim. I build IoT systems that sense, decide and act.
+
+From custom PCBs and FreeRTOS firmware to industrial protocols and multi-tenant cloud platforms, I engineer the whole stack between a sensor in the field and a decision on a dashboard. 5+ years across aquaculture, utilities, energy and industry, all designed and built in Bangladesh. See my work Download CV
+- Chittagong & Dhaka, Bangladesh
+
+01 · About
+
+### Bridging industrial edge hardware and scalable cloud infrastructure
+
+I'm a performance-driven IoT and embedded systems engineer. I run my own hardware R&D lab and have taken products from first prototype to small-batch manufacturing: saltwater-proof sensor nodes for fish farms, LoRaWAN smart water meters for a government utility, predictive-maintenance sensors for a multinational factory, and now a multi-tenant IoT platform for SmartData Technologies.
+
+My mission, under the **IoTWithRamim** name, is to prove that top-tier hardware, firmware and platforms can be designed and built locally in Bangladesh instead of imported. Sense Measure the real world reliably, even in harsh, noisy, battery-powered sites. Decide Understand context in real time with rules, hysteresis and human-in-the-loop safety. Act Switch the physical world: relays, pumps, aerators, and know that it really happened.
+#### Hardware & PCB
+
+2-layer PCB design in EasyEDA, galvanic isolation, solar BMS, snubbers and high-voltage AC control.
+#### Firmware
+
+Non-blocking C/C++ on FreeRTOS, register-level peripherals, ISRs, deep sleep, OTA and captive-portal provisioning.
+#### Connectivity
+
+MQTT, Modbus RTU/TCP over RS-485, BACnet, LoRaWAN, ESP-NOW, BLE and GSM, built to survive the field.
+#### Platforms & Data
+
+EMQX, TimescaleDB/PostgreSQL, Node.js/TypeScript, Next.js, Grafana and Docker, with security built in.
+
+02 · Featured work
+
+### Two systems I architected end to end
+
+2026 · SmartData Technologies Private codebase
+
+#### SmartSense: a multi-tenant IoT platform
+
+SmartData's own platform for every sensor and actuator product the company builds. An organisation signs in, registers sites, gateways and devices, gets MQTT credentials locked to its own topics, and sees live readings, charts, alerts and reports. Rules switch relays from live sensor data, safely.
+- **Tenant isolation in four layers:** per-organisation broker ACLs, server-verified sessions, Postgres row-level security and composite foreign keys, all covered by mutation-checked negative tests.
+- **Automation engine:** and/or condition trees across sensors, directional hysteresis, cooldowns, rule pairs, and "ask a person first" approvals.
+- **Reconciliation:** compares what automation intended with what the relay reported, and corrects drift after power cuts and reboots.
+- **For operators:** live push over Server-Sent Events, drag-and-drop dashboards, e-mail and Telegram alerts, immutable daily PDF reports, and a one-command installer for any Docker host.
+
+- **440** automated tests
+- **108** documented design decisions
+- **45** schema migrations
+- **~5 wks** plan to production
+
+- EMQX
+- TimescaleDB
+- PostgreSQL RLS
+- Node.js 24
+- TypeScript
+- Next.js
+- Grafana
+- Docker
+- ESP32
+
+2025 – 2026 · Nexus Fish Network
+
+#### SmartFishAuto™: AI-driven aquaculture ecosystem
+
+Described as Bangladesh's first AI-driven commercial aquaculture ecosystem. I led R&D and designed all three hardware families, their firmware and their PCBs, for 24/7 operation in saltwater. NFN-SEN Water monitor DO, pH, turbidity and ammonia over RS-485, solar BMS, galvanic isolation. NFN-SW Automation unit High-voltage AC control with snubbers and Oxygen-Demand aeration logic. NFN-LR Laser defence Autonomous, humane bird deterrence: servo pan-tilt in v1, steppers in v2.
+- **~25%** client energy saved
+- **99.9%** uptime design target
+- **8+** parameters polled concurrently
+Read the full case study
+
+03 · Projects
+
+### Selected projects
+
+Field-tested work across industries. Filter by domain; cards with a link open the full case study.
+
+04 · Experience
+
+### Where I've built things
+1. May 2026 – Present
+
+#### Lead IoT Engineer · SmartData Technologies Limited
+
+Dhaka (Banani office) · On-site
+ - Lead R&D and cross-functional engineering; mentor developers and align IoT work with business goals.
+ - Architected and built SmartSense, the company's multi-tenant IoT platform, and authored its architecture and hardware-sourcing strategy.
+ - Edge-to-cloud designs on ESP32, STM32, Radxa ROCK 5B+, DeepX NPU and Raspberry Pi with LoRaWAN, MQTT, Modbus, BACnet and ESP-NOW.
+2. Feb 2025 – May 2026
+
+#### Lead R&D Engineer, IoT & Hardware · Nexus Fish Network
+
+Remote / Hybrid
+ - Spearheaded SmartFishAuto™: sensor nodes, automation units and robotic defence systems.
+ - Custom 2-layer PCBs with galvanic isolation and solar BMS for 99.9% uptime in saltwater.
+ - Non-blocking FreeRTOS firmware polling 8+ parameters; Oxygen-Demand logic cut energy use by ~25%.
+3. Nov 2025 – Jan 2026
+
+#### Senior IoT Engineer · Enerzyz
+
+Remote · Contract
+ - IIoT architecture bridging ESP32 and Orange Pi gateways to industrial controllers over Modbus and BACnet.
+ - Python MQTT backends with InfluxDB and PostgreSQL; secure remote device management over SSH and cron.
+4. Nov 2023 – Jan 2025
+
+#### IoT Engineer · Padma Smart Technology Ltd
+
+Dhaka
+ - Led LoRaWAN integration for the Chattogram WASA smart water metering government project.
+ - Deep-sleep and clock optimisation extended field sensor battery life by 40%; hosted secure MQTT brokers on Linux VPS.
+5. Apr 2023 – Oct 2023
+
+#### Embedded Systems Engineer · Grit Technologies Limited
+
+Dhaka
+ - Deployed predictive-maintenance vibration and temperature nodes for British American Tobacco.
+ - Debugged RS-485 timing with an oscilloscope to keep data clean in high-EMI plants.
+6. Dec 2021 – Present
+
+#### Freelance IoT Developer · IoTWithRamim
+
+International
+ - OEE tracking systems for the garment industry; landslide early warning for a UN/NGO project.
+ - Rapid MVP apps in MIT App Inventor for client demos and field tests.
+
+05 · Skills
+
+### The toolbox
+
+#### Microcontrollers & SBCs
+- ESP32 S2/S3/C3
+- ESP8266
+- STM32
+- Arduino
+- Raspberry Pi
+- Orange Pi
+- Radxa ROCK 5B+
+- DeepX NPU
+
+#### Firmware & OS
+- Embedded C/C++
+- FreeRTOS
+- Bare metal
+- ISRs
+- MicroPython
+- Python
+- Linux
+- Bash
+- PlatformIO
+
+#### Protocols
+- MQTT
+- Modbus RTU/TCP
+- RS-485
+- BACnet
+- LoRaWAN
+- ESP-NOW
+- BLE
+- GSM/GPRS
+- I2C · SPI · I2S
+
+#### Hardware design
+- EasyEDA PCB
+- Galvanic isolation
+- Solar BMS
+- Snubber circuits
+- HV AC control
+- Logic analyzer
+- Oscilloscope
+
+#### Data & platforms
+- EMQX
+- Mosquitto
+- TimescaleDB
+- PostgreSQL
+- InfluxDB
+- Grafana
+- Node-RED
+- Node.js · TypeScript
+- Next.js
+
+#### DevOps & security
+- Docker
+- AWS
+- SSH
+- Git · GitHub
+- Row-level security
+- Per-tenant ACLs
+- OTA updates
+
+06 · Milestones & education
+
+### On stage and in the classroom
+
+12 – 14 Sep 2026 · Novotheatre, Dhaka
+
+#### Bangladesh Innovation Fair 2026
+
+Debuted an indigenous industrial IoT ecosystem at the SmartData pavilion, and personally walked Dr. Zubaida Rahman through how homegrown Edge AI and IoT can scale from one smart farm to a smart city.
+
+17 – 19 Sep 2026 · ICCB Hall 4, B-04
+
+#### International Security Expo 2026
+
+Showcased security-focused IoT integrations for SmartData Technologies.
+
+2022 · CGPA 3.56 / 4.00
+
+#### B.Sc. in Computer Science & Engineering
+
+University of Creative Technology, Chittagong. Thesis on smart farm management with IoT and image processing.
+
+2016
+
+#### Diploma in Computer Science & Engineering
+
+Shyamoli Ideal Polytechnic Institute, Chittagong.
+- Industrial IoT Attachment · bdtask Limited (6 months)
+- IoT & Embedded Systems Training · ICT Division (LICT)
+- Web Application Development (ASP.NET / C#) · Beacon IT
+
+07 · Contact
+
+### Have a sensor, a site or a system to connect?
+
+I'm open to IoT, embedded and edge-platform roles and collaborations, including relocation. The fastest way to reach me is e-mail. [Send an e-mail](mailto:ramim.cse.uctc@gmail.com)
+- [E-mailramim.cse.uctc@gmail.com](mailto:ramim.cse.uctc@gmail.com)
+- [Phone+880 1836-655062](tel:+8801836655062)
+- [LinkedInlinkedin.com/in/ramim256](https://linkedin.com/in/ramim256)
+- [WhatsApp+880 1836-655062](https://wa.me/8801836655062)
+- [GitHubgithub.com/RamimIoT](https://github.com/RamimIoT)
+
+---
+
+## Smart Aquaculture Ecosystem
+
+URL: https://ramimiot.github.io/projects/aquaculture/  
+Category: Aquaculture  
+Technologies: ESP32, MQTT, Wi-Fi, LoRaWAN-ready, Modbus RS-485, LiFePO4 solar, MPPT, OTA updates, DHT22
+
+An end-to-end industrial IoT solution for precision fish farming, built for **Nexus Fish Network (NFN)**. Three ESP32-based device families, for **sensing**, **switching** and **laser predator deterrence**, share one MQTT API to keep water quality optimal, cut operating costs and protect the stock.
+
+- **Client:** Nexus Fish Network (NFN)
+- **Role:** Lead R&D Engineer (IoT & Hardware)
+- **Type:** End-to-end industrial IoT ecosystem
+- **Status:** Deployed & operational
+
+### Overview
+
+The Smart Aquaculture Ecosystem is a complete IoT solution for modernising traditional fish farming. It connects the biology of the pond to digital automation, keeping water quality optimal, reducing operating costs and protecting aquatic stock.
+
+The ecosystem is built on a **unified MQTT API architecture**. Three device categories communicate with the cloud through it: **Sensing (SEN)**, **Switching (SW)** and **Laser Repellent (LR)**. Together they cover everything from real-time analytics to automated aeration and predator control.
+
+### System architecture
+
+At the core is a scalable identification protocol that gives every device a unique ID derived from its MAC address. All devices run on ESP32 microcontrollers and talk over a custom MQTT structure for low latency and high reliability.
+- **Connectivity:** MQTT over Wi-Fi, with provision for LoRaWAN gateways.
+- **Power:** autonomous 12 V solar system with LiFePO4 batteries and MPPT charge controllers.
+- **Fleet management:** over-the-air (OTA) firmware updates and dynamic configuration through the API.
+
+### Hardware evolution and device suite
+
+#### NFN-SEN: sensor nodes
+
+The eyes of the pond. The sensing unit monitors the critical water parameters: dissolved oxygen (DO), pH, ORP, turbidity, TDS, temperature and water level.
+- **Version 1.0, the flow-through concept:** hobby-grade analog sensors (DFRobot Gravity series) have a short life when left submerged. An innovative "sampling box" solved this: a 12 V pump periodically drew pond water into a test chamber, protecting the sensors from continuous submersion and bio-fouling.
+- **Version 2.0, the industrial upgrade:** moved DO and pH to industrial RS-485 Modbus sensors, and ORP to a custom interface built from a reverse-engineered analyzer module. The probes can now be submerged directly, removing the pump and greatly improving durability and data precision.
+
+Read the NFN-SEN case study
+
+#### NFN-SW: switching units
+
+The hands of the farm. An 8-channel intelligent control unit that automates heavy AC loads. It replaces manual switching of aerators and auto-feeders, acting on real-time data from the SEN nodes.
+- **Key feature:** cloud logic triggers oxygenation only when DO levels drop, optimising energy use.
+
+Read the NFN-SW case study
+
+#### NFN-LR: laser repellent
+
+The shield of the farm. An automated predator deterrent that uses computer-controlled lasers to drive off predatory birds without harming the ecosystem.
+- **Key feature:** a dual-axis (X/Y) pan-tilt mechanism aims a high-power 520 nm green laser. Version 1 uses two servo motors; version 2 uses stepper motors.
+
+Read the NFN-LR case study
+
+### Shared engineering features
+
+All three device families (SEN, SW and LR) follow the same engineering standards for field reliability:
+- **Internal health monitoring:** a DHT22 sensor inside every PCB enclosure reports internal temperature and humidity, so overheating or moisture ingress from a failed seal can be diagnosed remotely.
+- **Robust enclosures:** IP65-rated waterproof boxes and "ring buoy" floating structures that stay stable in turbulent water.
+- **Fail-safe power:** dual-power capability, accepting both solar (DC) and grid (AC-to-DC) inputs.
+
+---
+
+## NFN Sensor Unit (SEN v1 & v2)
+
+URL: https://ramimiot.github.io/projects/nfn-sen/  
+Category: Aquaculture  
+Technologies: ESP32, Modbus RS-485, ADS1115, DS18B20, DHT22, MQTT, LiFePO4 solar, BMS
+
+The data-acquisition node of the Nexus Fish Network ecosystem: a standalone, **energy-autonomous floating profiler** that continuously monitors critical aquaculture water parameters. Version 1 protected hobby-grade sensors with an active sampling box; version 2 moved to industrial probes with no moving parts.
+
+- **Client:** Nexus Fish Network (NFN)
+- **Role:** Lead R&D Engineer (IoT & Hardware)
+- **Type:** Floating water-quality profiler
+- **Versions:** SEN v1.0 and v2.0
+
+### Overview
+
+The NFN SEN unit floats on the pond surface and continuously measures the water parameters that matter in aquaculture. It is built on a "ring buoy" mechanical architecture:
+- **Structure:** a custom metal chassis mounted on a standard life-saving ring buoy for stability in turbulent water.
+- **Enclosure:** an IP65-rated waterproof box housing the MCU, the battery management system (BMS) and the signal-processing circuits.
+- **Power:** fully off-grid, using a 12 V solar panel, a 4S LiFePO4 battery pack and a solar charge controller.
+
+The unit is part of the Smart Aquaculture Ecosystem, where its readings drive the NFN-SW switching unit.
+
+### SEN v1.0: the active sampling approach
+
+The first version worked around the limits of hobby-grade sensors with mechanical ingenuity.
+
+#### The challenge
+
+The prototype used DFRobot Gravity analog sensors: DO (SKU SEN0237), pH V2 (SKU SEN0161-V2) and the Analog ORP Pro. Field testing showed that these sensors degraded quickly when continuously submerged, because of bio-fouling and electrolysis.
+
+#### The engineering solution: the sampling box
+
+To extend sensor life, I engineered an active sampling system:
+- **Mechanism:** a secondary plastic reservoir, the sampling box, mounted on the buoy.
+- **Logic:** a 12 V DC pump periodically filled the box with pond water.
+- **Sensing:** the DO, pH, ORP and turbidity sensors sat inside the box and took readings only when fresh water had been pumped in.
+- **Direct sensors:** robust sensors stayed deployed in the pond full time: TDS, temperature (DS18B20) and an ultrasonic water-level sensor mounted on a guide pipe.
+- **ADC interfacing:** dual ADS1115 16-bit ADC modules provided the resolution the analog sensor array needed.
+
+### SEN v2.0: the industrial evolution
+
+The current version focuses on durability and precision, and minimises mechanical failure points. It removes the pump system entirely by moving to industrial-grade probes rated for 24/7 submersion.
+- **RS-485 Modbus sensing:** dissolved oxygen and pH moved to industrial RS-485 Modbus sensors, eliminating analog signal noise and the need for frequent recalibration.
+- **Hardware reverse engineering (ORP):** to use a high-quality analog ORP probe cost-effectively, I reverse-engineered a commercial ORP analyzer, extracted its internal signal-conditioning module and interfaced it with the ADS1115 on my custom PCB.
+- **Custom sensor modification:** I waterproofed the electronics of the Gravity analog turbidity sensor so it can be submerged directly in the pond without a sampling chamber.
+
+**Result:** a solid-state system with zero moving parts and no pumps, which significantly reduces maintenance.
+
+### System intelligence and telemetry
+
+Both versions include telemetry for remote troubleshooting.
+
+#### Internal climate monitoring
+
+A DHT22 sensor sits directly on the PCB inside the main enclosure and reports the internal temperature and humidity of the waterproof box. Rising humidity warns the engineering team of a possible seal failure (water ingress) before the electronics are damaged.
+
+#### Data transmission
+- The ESP32 aggregates data over three buses: Modbus (RS-485), I2C (ADS1115) and OneWire (temperature).
+- Optimised payloads are sent to the cloud over MQTT for real-time visualisation.
+
+### v1.0 vs v2.0 at a glance
+| Area | SEN v1.0 | SEN v2.0 |
+| --- | --- | --- |
+| DO and pH | DFRobot Gravity analog (SEN0237, SEN0161-V2) in sampling box | Industrial RS-485 Modbus probes, directly submerged |
+| ORP | DFRobot Analog ORP Pro in sampling box | Analog probe with signal conditioning from a reverse-engineered analyzer, via ADS1115 |
+| Turbidity | Gravity analog sensor in sampling box | Custom-waterproofed Gravity sensor, directly submerged |
+| Moving parts | 12 V DC sampling pump | None |
+| Shared platform | ESP32, ADS1115 16-bit ADC, DHT22 enclosure telemetry, MQTT, 12 V solar with 4S LiFePO4 and BMS |
+
+---
+
+## NFN Switching Unit (SW)
+
+URL: https://ramimiot.github.io/projects/nfn-sw/  
+Category: Aquaculture  
+Technologies: ESP32, 8-channel relay, MQTT, Wi-Fi, DHT22, OTA updates, 12 V DC
+
+The "hands" of the Smart Aquaculture Ecosystem. While the sensor unit gathers data, the **NFN Switching Unit** acts on it: a cloud-connected, 8-channel actuator that automates paddle-wheel and air-pump aerators, automatic feeders and water management.
+
+- **Client:** Nexus Fish Network (NFN)
+- **Role:** Lead R&D Engineer (IoT & Hardware)
+- **Type:** Industrial automation hub / IoT actuator
+
+### Overview
+
+The NFN Switching Unit replaces manual switchboards on the farm. It turns the ecosystem's algorithmic decisions into physical actions on high-load equipment: paddle-wheel aerators, air-pump and diffuser aerators, automatic feeders and water-management pumps. The result is lower energy consumption and a fast response to critical water-quality events.
+
+It works alongside the NFN-SEN sensor unit as part of the Smart Aquaculture Ecosystem.
+
+### Hardware architecture
+
+The unit is built for the harsh electrical environment of agricultural sites while keeping precise digital control.
+- **Microcontroller:** dual-core ESP32 running the Wi-Fi and MQTT stacks and the control logic.
+- **Actuation:** an 8-channel relay module that switches AC loads, so a single unit can manage several aerators and feeders at once.
+- **Power:** a stable 12 V 2 A DC adapter that supplies enough current for simultaneous relay-coil activation without voltage sag.
+- **Connectivity:** MQTT over Wi-Fi, triggering devices from the cloud in under 200 ms.
+
+- **8** relay channels per unit
+- **<200 ms** cloud-to-relay triggering
+- **12 V 2 A** DC supply
+
+### Operational logic: AI-driven automation
+
+Instead of running on fixed timers, the SW unit follows dynamic logic driven by data from the ecosystem's sensor nodes.
+
+#### Scenario 1: oxygen automation (energy saving)
+1. The SEN unit detects dissolved oxygen (DO) falling below a critical threshold, for example 4 mg/L.
+2. The server analyses the water dynamics and sends a command to the SW unit.
+3. The SW unit switches on the aerator relays immediately, and switches them off once DO has normalised, avoiding wasted energy.
+
+#### Scenario 2: precision feeding
+1. The cloud schedule or an AI growth model determines the best feeding times.
+2. The SW unit runs the feeder motors for precise durations, minimising feed waste and water pollution.
+
+#### Scenario 3: smart water-level maintenance (inlet control)
+1. The ultrasonic water-level sensor on the SEN unit detects that the pond level has dropped below the preset threshold, for example through evaporation or seepage.
+2. The server verifies the reading and sends a "refill" command over MQTT.
+3. The SW unit switches on the inlet pump and fills the pond until the target level is reached, preventing water stress on the fish.
+
+#### Scenario 4: automated quality flush (outlet and inlet sync)
+1. The SEN unit reports critical levels of toxic ammonia (NH3) or high turbidity that aeration alone cannot fix.
+2. The AI logic starts a water-exchange protocol.
+3. **Drain phase:** the SW unit runs the outlet pump to discharge the dirty bottom layer of water.
+4. **Refill phase:** when the level reaches a safety limit, it stops the outlet pump and starts the inlet pump to bring in fresh water and restore balance.
+
+These logic cycles are fully configurable from the mobile app, so farmers can set their own thresholds for pump activation.
+
+### Reliability and maintenance features
+- **Internal climate monitoring:** as on the SEN unit, an onboard DHT22 continuously reports the temperature and humidity inside the control box, enabling proactive maintenance if the enclosure overheats or a seal fails.
+- **Unique device addressing:** the firmware generates a unique ID from the ESP32's MAC address, so the server can address and control hundreds of SW units across a large farm without IP conflicts.
+- **Dynamic configuration (OTA):** over-the-air firmware updates and remote reconfiguration through the MQTT API, with no physical access to the device needed.
+
+---
+
+## NFN Laser Repellent (LR)
+
+URL: https://ramimiot.github.io/projects/nfn-lr/  
+Category: Aquaculture  
+Technologies: ESP32, Servo pan-tilt (v1), Stepper motors (v2), 520 nm green laser, MQTT, RTSP, YOLOv8, DHT22
+
+A non-lethal, automated security system that protects open-air fish farms from predatory birds such as cormorants and herons. A **520 nm green laser** on a dual-axis pan-tilt mount exploits birds' fear of moving green light to create a "no-fly zone" over the water without harming wildlife.
+
+- **Client:** Nexus Fish Network (NFN)
+- **Role:** Lead R&D Engineer (IoT & Hardware)
+- **Type:** Automated predator deterrent
+- **Status:** v1.0 standard edition; v2.0 AI-vision prototype in field testing
+
+### Overview
+
+Netting and other traditional protection methods are expensive and often impractical on large water bodies. The NFN Laser Repellent takes a different approach: it uses the biological fear reflex birds have towards moving green light beams. By simulating a physical threat across the water surface, it keeps predators away without causing them harm.
+
+The LR unit is the third device family in the Smart Aquaculture Ecosystem, alongside the NFN-SEN sensor and NFN-SW switching units.
+
+### LR v1.0: the automated sweeper (standard edition)
+
+The foundational version, designed for broad-area coverage using algorithmic patterns.
+
+#### Mechanism
+- **Dual-axis control:** two precision servo motors, one for the X axis and one for the Y axis, form a pan-tilt mount with 180° of travel.
+- **Optics:** a high-power 520 nm green laser. Green was chosen for its high visibility in daylight and its effectiveness at startling avian pests.
+
+#### Operational logic
+- **Randomised sweeping:** so that birds do not get used to the patterns, the ESP32 firmware runs randomised sweeping algorithms. The laser crosses the pond surface on unpredictable paths for constant deterrence.
+- **Schedule-based activation:** through the MQTT API the system can be scheduled to run only during peak predation hours (dawn and dusk), saving energy.
+
+### LR v2.0: the AI-vision hunter (advanced prototype)
+
+Currently in active field testing, v2.0 gives the system sight, turning it from a passive deterrent into an active defender. Where v1.0 sweeps blindly, v2.0 adds real-time video analysis, and its pan-tilt mechanism is driven by stepper motors instead of servos.
+
+#### System workflow
+1. **Visual input:** the system connects to an on-site CCTV/IP camera over RTSP (Real-Time Streaming Protocol).
+2. **AI detection:** a computer-vision model (for example YOLOv8) running on a local edge server processes the live stream. It is trained to recognise specific predator classes such as "bird" and "heron".
+3. **Target acquisition:** when a predator is detected, the system calculates its coordinates relative to the laser's position.
+4. **Active repulsion:** the system overrides the idle sweeping pattern and drives the stepper motors to point the laser directly at or near the target, which greatly increases the scare factor.
+
+### Shared hardware
+
+Both versions share a robust, field-ready hardware architecture:
+- **Microcontroller:** ESP32 handling motor control (servos on v1.0, steppers on v2.0) and MQTT communication.
+- **Flexible power:** solar mode on the standard 12 V NFN solar system for off-grid sites, or grid mode through an AC-to-DC adapter where electricity is available.
+- **Internal telemetry:** as on the SEN and SW units, a DHT22 on the PCB monitors enclosure temperature so the laser module does not overheat during long operation.
+- **Connectivity:** fully integrated into the Nexus Fish Network over MQTT, so users can aim the laser manually or disable it from the mobile app during farm maintenance.
+
+### Versions at a glance
+| | LR v1.0 | LR v2.0 |
+| --- | --- | --- |
+| Status | Standard edition | Advanced prototype, in field testing |
+| Pan-tilt drive | Two servo motors (X/Y) | Stepper motors |
+| Targeting | Randomised sweeping algorithms, scheduled via MQTT | RTSP camera feed analysed by a computer-vision model (e.g. YOLOv8) on an edge server; aims at detected birds |
+| Laser | High-power 520 nm green |
+
+---
+
+## Worker Efficiency Monitor
+
+URL: https://ramimiot.github.io/projects/production-monitor/  
+Category: Industrial  
+Technologies: ESP32, FreeRTOS, ILI9341 TFT, PCF8574, MAX98357A I2S, SD card, MQTT, REST API, Android
+
+A smart industrial production monitor (IIoT) for the garment sector. This edge device **gamifies the production floor**: it tracks target vs. actual output in real time, adjusts goals with a carry-over algorithm, and gives workers visual and audio feedback to keep them in the green zone.
+
+- **Sector:** Manufacturing (garments)
+- **Role:** Senior IoT Engineer (firmware & hardware architect)
+- **Type:** Automated worker efficiency monitor
+
+### The problem
+
+In the labour-intensive garment sector, production targets change constantly. Supervisors had no real-time visibility of micro-stoppages, and workers had no immediate feedback on their own performance.
+
+### The solution
+
+I engineered an edge-computing IIoT device that turns the production floor into a game. It tracks target vs. actual metrics in real time, adjusts goals dynamically with a carry-over algorithm, and uses visual and audio feedback to keep each worker in the green zone.
+
+### Hardware
+
+The hardware is designed to handle frequent user interaction and data logging at the same time.
+- **MCU:** dual-core ESP32, chosen for its multi-threading capability.
+- **Display:** 320×240 TFT touchscreen (ILI9341 driver) rendered at high speed with the TFT_eSPI library.
+- **Input:** eight physical push buttons on a PCF8574 I2C expander, used for quick increment/decrement of production counts (standing in for machine sensor inputs) and for menu navigation.
+- **Audio feedback:** MAX98357A I2S DAC amplifier for voice prompts and alerts.
+- **Storage:** SD card (SPI) for configuration, assets and Excel-compatible CSV logs.
+
+### Firmware architecture: FreeRTOS
+
+To keep the user experience non-blocking, I structured the firmware as separate FreeRTOS tasks running in parallel.
+
+#### Task orchestration
+- **Production task:** the core business logic, stopwatch and shift management.
+- **Server task:** an asynchronous HTTP web server for API communication.
+- **GUI task:** dedicated display rendering. Mutex semaphores prevent SPI bus collisions between the display and the SD card.
+
+#### System reliability
+- **Watchdog timer:** the ESP32 task watchdog restarts individual tasks automatically if they hang.
+- **Power-loss recovery:** the running state is written to storage every few seconds, so after a power cut the device resumes exactly where it left off.
+
+### Software ecosystem and connectivity
+
+The system creates a connected floor on a local network architecture, keeping data secure and transmission fast.
+- **MQTT telemetry:** the device acts as an MQTT client, publishing key production metrics (real-time count, efficiency %, active time) to a local server/broker for central logging.
+- **REST API:** endpoints allow device telemetry to be queried directly.
+
+#### Mobile application
+
+I developed a companion Android app for industrial production engineers (IPEs):
+- **Live dashboard:** real-time status of every connected device on the floor.
+- **Data export:** download daily production logs as CSV, directly from a specific device or from the server.
+- **Wireless configuration:** set the standard minute value (SMV) and hourly targets for a line remotely, without physical access.
+
+### Operational workflow
+1. **Setup:** the line chief sets the daily target and SMV on the touchscreen or wirelessly from the mobile app.
+2. **Operation:** each time the worker finishes a garment, the count goes up, triggered by the physical button or an external sensor.
+3. **Calculation:** the ESP32 calculates real-time efficiency (%) from elapsed time against the adaptive target.
+4. **Feedback (gamification):** on track, the display shows green indicators that reinforce good performance; when the worker falls behind, the I2S audio plays a warning and the display flags the delay in red or orange.
+5. **Reporting:** all data syncs to the server over MQTT, so management can analyse bottlenecks and historical performance.
+
+---
+
+## Predictive Maintenance for British American Tobacco Bangladesh
+
+URL: https://ramimiot.github.io/projects/predictive-maintenance-bat/  
+Category: Industrial  
+Technologies: Industrial IoT, Sensor nodes, Machine learning, Predictive maintenance
+
+An industrial IoT project for **British American Tobacco Bangladesh (BAT)** that brings sensor nodes and **machine-learning algorithms** into BAT's manufacturing facilities to predict and prevent equipment failures before they stop production.
+
+- **Client:** British American Tobacco Bangladesh (BAT)
+- **Type:** Predictive maintenance
+- **Setting:** Manufacturing facilities, Bangladesh
+
+### Overview
+
+The project aims to change how maintenance is done on BAT's production floors in Bangladesh. Instead of waiting for equipment to break down, sensor nodes collect data from the machines and machine-learning algorithms use it to predict potential failures, so they can be prevented before they happen.
+
+### Goals
+- **Predict failures:** spot signs of potential equipment failure early from sensor-node data.
+- **Prevent breakdowns:** act on those predictions to keep machines running and minimise downtime.
+- **Production efficiency:** fewer unplanned stops on the manufacturing lines.
+
+### Gallery
+
+Further project details are confidential and cannot be shared publicly.
+
+---
+
+## Heavy Rain & Landslide Warning Device
+
+URL: https://ramimiot.github.io/projects/landslide-warning/  
+Category: Utilities & City  
+Technologies: IoT, Rain gauge, Rainfall monitoring, Siren alarm, SMS alerts, Early warning
+
+An IoT device that detects **heavy rainfall** in landslide-prone areas of the **Ukhiya Rohingya Camp** and gives timely warnings: a **siren** for residents and **SMS notifications** for officials.
+
+- **Context:** Ukhiya Rohingya Camp
+- **Type:** Rainfall early-warning device
+- **Alerts:** On-site siren & SMS to officials
+
+### Overview
+
+Landslides in hill areas are usually triggered by sustained heavy rain. This device watches rainfall where it matters, so residents and officials get a warning while there is still time to act, rather than after the slope has already moved.
+
+### How it works
+- **Rainfall monitoring:** a rain gauge continuously measures rainfall levels in the landslide-prone area.
+- **Early detection:** the device recognises critical rainfall conditions as they develop.
+- **Siren for residents:** a loud siren alerts people living in the area on site.
+- **SMS to officials:** SMS notifications reach the responsible officials so they can take proactive measures.
+
+Circuit diagrams and source code are confidential to the client.
+
+---
+
+## Mountain Collapse Alert & Rainfall Monitor (GSM)
+
+URL: https://ramimiot.github.io/projects/mountain-collapse-alert/  
+Category: Utilities & City  
+Technologies: ESP32, Rain gauge, GSM / SMS, Central database, 16x2 LCD, Buzzer alarm, Battery backup
+
+An IoT rainfall monitoring system for landslide prevention. A **rain gauge** on an **ESP32** feeds a central database, and the system issues real-time **mountain-collapse alerts** by buzzer and **SMS over GSM**.
+
+- **Type:** Rainfall monitoring & landslide alert system
+- **Platform:** ESP32 Dev Kit v1
+- **Alerts:** Buzzer & GSM SMS
+
+### Overview
+
+This project aims to prevent landslides in mountainous regions. It measures rainfall with a rain gauge, sends the readings to a central database, and uses the calculated rainfall to raise advance mountain-collapse alerts in real time, locally with a buzzer and remotely by SMS over GSM.
+
+### How it works
+1. The rain gauge measures rainfall at the site.
+2. The ESP32 collects the rainfall data and sends it to a central database.
+3. The system calculates the rainfall and, when conditions call for it, broadcasts an advance mountain-collapse alert on a buzzer.
+4. The GSM module sends SMS alerts at the same time.
+5. A 16x2 LCD shows the system's current status.
+
+### Hardware
+- **Microcontroller:** ESP32 Dev Kit v1
+- **Sensor:** rain gauge
+- **Alerts:** buzzer for local real-time alarms; GSM module for SMS alerts
+- **Display:** 16x2 LCD for system information
+- **Power:** power management system with battery backup for reliable operation
+
+Block diagrams, circuit diagrams and source code are confidential to the client.
+
+---
+
+## Water Logging Monitoring with Computer Vision & IoT
+
+URL: https://ramimiot.github.io/projects/water-logging-cv/  
+Category: Utilities & City  
+Technologies: YOLOv4, Computer vision, IoT sensors, Cloud server, E-mail alerts
+
+A real-time monitoring and alert system that combines IoT sensors with a cloud server running a pre-trained **YOLOv4** model to detect water logging as it happens, and alerts the system owner by **e-mail**.
+
+- **Type:** Environmental monitoring & alerting
+- **Detection:** Pre-trained YOLOv4 on a cloud server
+- **Alerts:** E-mail notifications & cloud monitoring
+
+### Overview
+
+The system is built for organisations and individuals concerned with environmental monitoring who need to know about water logging the moment it happens. IoT sensors gather data on site, a cloud server analyses it with a pre-trained YOLOv4 computer-vision model, and the owner is alerted straight away.
+
+### How it works
+- **Sensing:** various IoT sensors collect data from the monitored area.
+- **Detection:** a cloud server runs a pre-trained YOLOv4 model to detect water logging in real time.
+- **Alerts:** e-mail notifications go to the system owner as soon as water logging is detected.
+- **Monitoring:** the situation can be followed through cloud-based monitoring.
+
+### Gallery
+
+Block diagrams, flow charts, circuit diagrams and source code are not shared publicly.
+
+---
+
+## Energy-Efficient Traffic & Street Light Management
+
+URL: https://ramimiot.github.io/projects/traffic-street-light/  
+Category: Utilities & City  
+Technologies: IoT, LDR, IR motion sensor, DHT11, ThingSpeak, Mobile app, Solar power, Current monitoring
+
+An IoT system that uses **solar energy** and sensors to **cut street-light energy use**, detect faulty lamps and **switch traffic signals by traffic density**, with remote control from the **Smart Traffic** app and data on **ThingSpeak**.
+
+- **Type:** Smart street lighting & traffic control
+- **Platform:** ThingSpeak + Smart Traffic mobile app
+- **Power:** Solar energy system
+
+### Overview
+
+The system uses solar energy and IoT to reduce the energy street lights consume, detect faulty street lights, and automate traffic signals based on traffic density. The goal is better energy efficiency, lower maintenance costs, and a safe, reliable way to manage traffic and street lighting.
+
+### How it works
+
+A microcontroller processes the sensor data and makes the control decisions. LDR, IR motion and DHT11 sensors provide temperature, humidity, sunlight intensity and street-light intensity.
+- **Automatic street lights:** street lights turn on automatically based on the sensor readings.
+- **Motion-based dimming:** lights dim to save energy depending on motion on the road.
+- **Fault detection:** faulty street lights are detected automatically.
+- **Adaptive traffic signals:** signals change automatically according to traffic density.
+- **Current monitoring:** the system tracks current consumption.
+- **Remote control:** the "Smart Traffic" mobile app and ThingSpeak let the system be monitored, controlled and logged for further analysis from anywhere.
+
+### Hardware & stack
+- **Sensors:** LDR, IR motion sensors, DHT11
+- **Power:** solar energy system
+- **Cloud:** ThingSpeak for data monitoring and storage
+- **App:** "Smart Traffic" mobile app
+
+Block diagrams, circuit diagrams and source code are not shared publicly.
+
+---
+
+## Real-Time Flood Detection & Alarm System
+
+URL: https://ramimiot.github.io/projects/flood-detection/  
+Category: Utilities & City  
+Technologies: ESP32, Arduino IoT Cloud, Ultrasonic sensor, Water flow sensor, Rain sensor, DHT11, GSM, Solar power
+
+A solar-powered **ESP32** system that watches **water level, water flow, rain, temperature and humidity**, raises a local flood alarm, and sends notifications over **Wi-Fi or GSM**, with remote monitoring and control through **Arduino IoT Cloud**.
+
+- **Type:** Flood detection & alarm system
+- **Platform:** ESP32 Dev Kit v1, Arduino IoT Cloud
+- **Status:** v1 built for a friend's final project; being extended
+
+### Overview
+
+The system monitors the parameters that signal a flood: water level, water flow, rain, temperature and humidity. It sounds an advance flood alarm on site with a buzzer and notifies users over the internet through Wi-Fi or GSM. An Arduino IoT Cloud dashboard provides remote monitoring and control.
+
+### Features
+- **Water level:** an ultrasonic sensor measures the water level.
+- **Water flow:** a water flow sensor tracks the flow.
+- **Rain and climate:** a rain sensor detects rain and a DHT11 reads temperature and humidity.
+- **Real-time alarm:** a buzzer broadcasts advance flood alerts on site.
+- **Remote alerts:** notifications go out over Wi-Fi or GSM.
+- **Cloud dashboard:** Arduino IoT Cloud for remote monitoring and control.
+
+### Hardware
+- **Microcontroller:** ESP32 Dev Kit v1
+- **Sensors:** ultrasonic sensor (water level), water flow sensor, rain sensor, DHT11
+- **Outputs:** buzzer alarm, 16x2 LCD for system information
+- **Connectivity:** Wi-Fi or GSM
+- **Power:** solar panel, power management system and battery backup
+
+### Versions
+
+The first version was built for a friend's final project. I have since been updating it with more capabilities and features.
+
+---
+
+## Environment Monitoring & Visualization with ThingSpeak
+
+URL: https://ramimiot.github.io/projects/thingspeak-environment/  
+Category: Agriculture  
+Technologies: Arduino Uno, ESP-01, Wi-Fi, ThingSpeak, pH sensor, Air-quality sensor, Soil-moisture sensor, Temperature sensor, Wind-flow sensor
+
+A multi-sensor station that monitors **air and water quality, soil moisture, temperature and wind flow**, and sends every reading to the **ThingSpeak** cloud for storage and visualization, building a dataset for environmental research.
+
+- **Type:** Environmental monitoring
+- **Platform:** Arduino Uno + ESP-01 (Wi-Fi)
+- **Cloud:** ThingSpeak
+- **Purpose:** Data collection for environmental research
+
+### How it works
+
+An **Arduino Uno** reads the sensors, and an **ESP-01** Wi-Fi module handles internet communication. All collected data is pushed to the ThingSpeak server, where it is stored and charted so it can be reviewed and analysed later.
+
+#### Parameters monitored
+- pH (water quality)
+- Air quality
+- Soil moisture
+- Temperature
+- Wind flow
+
+### Gallery
+
+Block diagrams, flow charts, circuit diagrams and source code are not shared publicly.
+
+---
+
+## Smart Agriculture Farm Management System (B.Sc. Thesis)
+
+URL: https://ramimiot.github.io/projects/smart-farm-thesis/  
+Category: Agriculture  
+Technologies: ESP32, ESP32-CAM, Image processing, Soil moisture sensor, Temperature &amp; humidity sensor, Flammable gas sensor, Real-time database, Android app, Solar power
+
+My B.Sc. thesis project: a **solar-powered** farm management system that combines IoT sensing with image processing. Sensors track the field's conditions, an **ESP32-CAM** watches the farm around the clock, and the whole system is controlled from an **Android app**.
+
+- **Context:** B.Sc. thesis, Computer Science & Engineering, University of Creative Technology, Chittagong
+- **Type:** Farm monitoring & control
+- **Power:** Solar
+- **Control:** Android app via a real-time database; Auto or Manual mode
+
+### Overview
+
+The system is designed for the effective management of an agricultural farm. Running on solar power, it collects field data from a set of sensors, keeps a camera on the farm 24/7, and can run automatically or be operated manually from a phone.
+
+### What it monitors
+- **Temperature and humidity:** the climate around the crops.
+- **Soil moisture:** how wet the soil is.
+- **Flammable gas:** detection of flammable gas on the farm.
+- **Camera:** an ESP32-CAM for 24/7 monitoring of the environment, the image-processing side of the system.
+
+### Control
+- **Auto or Manual mode:** the system can run on its own or be operated by hand.
+- **Android app:** monitoring and control from a mobile app, synchronised through a real-time database.
+- **Solar powered:** the whole system runs on solar energy.
+
+### Gallery
+
+Block diagrams, flow charts, circuit diagrams and source code are not shared publicly.
+
+---
+
+## Smart Irrigation System (ESP32 + Arduino IoT Cloud)
+
+URL: https://ramimiot.github.io/projects/smart-irrigation/  
+Category: Agriculture  
+Technologies: ESP32, Arduino IoT Cloud, Wi-Fi, Soil-moisture sensor, Water-level sensor, Actuators, Web & mobile dashboard
+
+An irrigation automation project that aims to improve crop yields and water management for **smallholder farmers, roof gardens and flower tubs**. Soil-moisture and water-level sensors feed an **ESP32**, which decides how much water the plants get and can be monitored and controlled through **Arduino IoT Cloud**.
+
+- **Type:** Irrigation automation
+- **Platform:** ESP32 + Arduino IoT Cloud
+- **Users:** Smallholder farmers, roof gardens, home gardeners
+- **Connectivity:** Wi-Fi, with offline operation
+
+### How it works
+1. **Sense:** soil-moisture sensors and water-level sensors collect field data.
+2. **Decide:** the data goes to the ESP32 gateway unit, which runs an algorithm with threshold values for soil moisture and water level to optimise water use for the crops.
+3. **Act:** the ESP32 triggers the actuators that control the quantity of water delivered.
+4. **Monitor:** over Wi-Fi, the system can be monitored and controlled from Arduino IoT Cloud web and mobile applications.
+
+### Key features
+- **Threshold-based watering:** irrigation follows soil moisture and the available water level.
+- **Remote control:** web and mobile dashboards through Arduino IoT Cloud.
+- **Works offline:** the controller keeps operating without cloud communication.
+- **Low power:** designed to maximise results while using less power.
+
+### Impact
+
+The project aims to deliver a positive economic return for farmers and their families by improving yields and promoting sustainable water management.
+
+### Gallery
+
+Build and test videos and source code are not shared publicly.
+
+---
+
+## Cow Health Monitoring & Alert System
+
+URL: https://ramimiot.github.io/projects/cow-health/  
+Category: Agriculture  
+Technologies: ESP32 Dev Kit v1, Heart-rate & SpO₂ sensor, Accelerometer, Waterproof temperature sensor, DHT11, Wi-Fi, Email alerts, Mobile app, OTA
+
+An IoT system that keeps watch over a cow's health using a heartbeat and oxygen-saturation sensor, an accelerometer, a waterproof temperature probe and a DHT11. It runs on the **ESP32 Dev Kit v1**, sends **email alerts**, and can be monitored and controlled remotely from a mobile app.
+
+- **Type:** Livestock health monitoring
+- **Platform:** ESP32 Dev Kit v1
+- **Alerts:** Email notifications & mobile app
+- **Firmware:** Over-the-air (OTA) updates
+
+### How it works
+
+Several sensors work together to build a picture of the animal's condition. The ESP32 reads them, raises an email notification when something needs attention, and connects to a mobile app for remote monitoring and control of the system.
+- **Heartbeat & oxygen saturation:** a combined sensor tracks the cow's heart rate and SpO₂.
+- **Movement:** an accelerometer captures the animal's motion.
+- **Body temperature:** a waterproof temperature sensor.
+- **Surroundings:** a DHT11 measures ambient temperature and humidity.
+- **Alerts & remote access:** email notifications plus a mobile app for monitoring and control.
+- **OTA updates:** firmware can be updated wirelessly, without retrieving the device.
+
+### Gallery
+
+Block diagrams, flow charts, circuit diagrams and source code are not shared publicly.
+
+---
+
+## Multi-Sensor Vehicle Safety & Emergency Response
+
+URL: https://ramimiot.github.io/projects/vehicle-safety/  
+Category: Health & Safety  
+Technologies: ESP32, MPU-6050, MQ-2 gas sensor, Flame sensor, DHT11, NEO-6M GPS, SIM800L GSM, SSD1306 OLED, 18650 2S BMS, mDNS web server
+
+A real-time vehicle monitoring system that detects **accidents, fires, fuel leakages and critical temperature variations**, then automatically alerts the right people and emergency services by SMS with the vehicle's GPS location.
+
+- **Type:** Vehicle safety & emergency response
+- **Platform:** ESP32 with SIM800L GSM and NEO-6M GPS
+- **Power:** Dual 18650 cells, 2S BMS
+
+### Overview
+
+The system brings several hazard sensors, GPS tracking and GSM communication together in one ESP32-based unit. It watches the vehicle continuously and, depending on how serious an incident is, notifies the driver, traffic control, the fire service and an ambulance, with the location ready to open in Google Maps.
+
+### System architecture
+
+#### Hardware
+| Function | Component |
+| --- | --- |
+| Core processing | ESP32 microcontroller |
+| Accident detection | MPU-6050 6-axis motion-tracking sensor |
+| Gas leakage | MQ-2 gas / air-quality sensor |
+| Fire | Flame sensor |
+| Environment | DHT11 temperature and humidity sensor |
+| Location | NEO-6M GPS module |
+| Communication | SIM800L GSM/GPRS module for emergency SMS |
+| Display | SSD1306 OLED, 128×32, I2C |
+| Power | Two 18650 cells with a 2S BMS; 8.4 V to 5 V 3 A buck converter; TP5100-based charger (12 V to 8.4 V) |
+
+#### Software: task flow
+
+The firmware is organised as a hierarchy of tasks:
+1. System and peripheral initialisation
+2. Continuous multi-sensor data collection
+3. Real-time data processing and analysis
+4. Dynamic alert generation
+5. Multi-channel notification dispatch
+6. Data synchronisation with a local server
+
+### Four-level alert system
+
+Alerts escalate with the severity of the incident:
+| Level | Who is notified |
+| --- | --- |
+| 1 | Personal notification |
+| 2 | Personal + traffic control |
+| 3 | Personal + traffic control + fire service |
+| 4 | Full emergency response: all services + ambulance |
+
+### Key features
+
+#### Accident detection
+
+Vibration magnitude is monitored in real time. Crossing a threshold triggers an automatic alert to emergency services with the GPS location.
+- **>850** vibration magnitude: basic accident alert
+- **>1000** vibration magnitude: severe accident alert
+- **4** escalating alert levels
+
+#### Monitoring and notification
+- **Gas leakage:** continuous detection with the MQ-2 sensor.
+- **Fire:** flame detection with an immediate emergency response.
+- **Temperature and humidity:** continuous monitoring with real-time data logging.
+- **SMS alerts with location:** GSM messages carry GPS data formatted for Google Maps, sent at the alert level that matches the incident.
+- **Remote monitoring:** a local web server reachable over mDNS provides real-time data visualisation, system status and remote vehicle control.
+
+### Impact
+- Automated alerts reduce emergency response time.
+- Monitoring several parameters at once improves overall vehicle safety.
+- Sensor fusion improves accident-detection accuracy.
+- Real-time tracking and monitoring of the vehicle.
+
+### Future enhancements
+- AI-based accident prediction
+- Cloud integration for data analytics
+- A mobile app for remote monitoring
+- Improved power management
+- Integration with smart-city infrastructure
+
+---
+
+## Patient Health Monitoring & Alert System
+
+URL: https://ramimiot.github.io/projects/patient-health/  
+Category: Health & Safety  
+Technologies: ESP32 Dev Kit v1, Health sensors, OLED display, Wi-Fi, Email alerts, Mobile app, OTA
+
+An IoT health monitoring system that tracks a patient's condition with several sensors and sends alerts through **email notifications** and a **mobile app**. It is built on the **ESP32 Dev Kit v1**, with an OLED display for local readings.
+
+- **Type:** Patient health monitoring
+- **Platform:** ESP32 Dev Kit v1
+- **Alerts:** Email notifications & mobile app
+- **Firmware:** Over-the-air (OTA) updates
+
+### Key features
+- **Continuous monitoring:** multiple sensors track the patient's health.
+- **Alerts:** email notifications and a mobile app keep carers informed remotely.
+- **Local display:** an OLED screen shows the relevant readings at the bedside.
+- **OTA updates:** firmware can be updated wirelessly.
+
+### Gallery
+
+Block diagrams, flow charts, circuit diagrams and source code are not shared publicly.
+
+---
+
+## IoT Security Bot: ESP32-CAM + Telegram with OTA
+
+URL: https://ramimiot.github.io/projects/security-bot/  
+Category: Health & Safety  
+Technologies: ESP32-CAM, PIR motion sensor, Telegram Bot, OTA firmware updates, 3.7 V battery, Power-management circuit
+
+A simple, affordable surveillance device: when a **PIR sensor** detects motion, an **ESP32-CAM** takes a picture and sends it to a chosen **Telegram** account or group. The same Telegram chat is used to control the device, and the firmware updates over the air.
+
+- **Type:** Motion-triggered photo surveillance
+- **Platform:** ESP32-CAM with PIR sensor
+- **Interface:** Telegram bot
+- **Power:** 3.7 V battery with power-management circuit
+
+### Overview
+
+The goal was a simple, affordable security system built with IoT technology. A small battery-powered ESP32-CAM unit watches an area, photographs any movement and delivers the pictures to Telegram, the same app used to control the device.
+
+### How it works
+1. The PIR sensor detects motion.
+2. The ESP32-CAM takes a picture.
+3. The picture is sent to a specific Telegram account or group.
+
+### Control from Telegram
+- **Picture interval:** set the time interval for sending pictures.
+- **Flashlight:** turn the ESP32-CAM's flash on or off.
+- **Device status:** check the state of the security bot from the Telegram app.
+- **OTA updates:** firmware is updated wirelessly, over the air.
+
+### Hardware
+- ESP32-CAM
+- PIR motion sensor
+- 3.7 V battery with a power-management circuit
+
+Block diagrams, flow charts, circuit diagrams and source code are not shared publicly.
+
+---
+
+## Indoor Fire Fighter System (ESP32 + IoT Cloud)
+
+URL: https://ramimiot.github.io/projects/indoor-fire-fighter/  
+Category: Health & Safety  
+Technologies: ESP32 Dev Kit v1, MQ2 gas sensor, Flame sensors, Water pump, Servo motor, DHT11, 16x2 LCD, Battery backup, Arduino IoT Cloud
+
+A smart device that **detects and extinguishes indoor fires**. It vents flammable gas, detects flames, aims a water jet at the fire and raises the alarm locally and through the **Arduino IoT Cloud**, all driven by an **ESP32 Dev Kit v1** with battery backup.
+
+- **Context:** Client project
+- **Type:** Indoor fire detection & suppression
+- **Platform:** ESP32 Dev Kit v1
+- **Cloud:** Arduino IoT Cloud
+
+### How it works
+- **Gas detection & ventilation:** an MQ2 gas sensor senses flammable gases, and an exhaust fan extracts them.
+- **Flame detection:** two flame sensors detect a fire.
+- **Suppression:** a water pump starts the flow of water, and a servo attached to the pump pipe directs it toward the fire.
+- **Alarm:** a buzzer sounds a fire alarm, and the alert is also sent to users through Arduino IoT Cloud.
+- **Remote dashboard:** users can monitor and control the system from the cloud dashboard.
+
+### Hardware
+| Component | Role |
+| --- | --- |
+| ESP32 Dev Kit v1 | Main controller; built-in Wi-Fi connects it to the internet |
+| Power management system + battery backup | Reliable power delivery |
+| MQ2 gas sensor | Flammable gas detection |
+| Exhaust fan | Gas extraction |
+| Flame sensors (x2) | Fire detection |
+| Water pump + servo | Water delivery and aiming |
+| Buzzer | Local fire alarm |
+| DHT11 | Temperature and humidity |
+| 16x2 LCD | Local information display |
+
+### Gallery
+
+Circuit diagrams and source code are confidential to the client.
+
+---
+
+## Environment & Wind Monitor with Toxic Gas Neutralizer
+
+URL: https://ramimiot.github.io/projects/env-wind-gas-neutralizer/  
+Category: Health & Safety  
+Technologies: ESP32, MQ-135, Wind speed sensor, DHT11, Servo, Solar tracking, 16x2 LCD, Wi-Fi
+
+A solar-powered **ESP32** station that detects toxic gases such as **ammonia and chlorine** and neutralizes them with a **servo-driven neutralizer**, while monitoring temperature, humidity, sunlight intensity and **wind speed**.
+
+- **Type:** Environmental monitoring & toxic gas neutralizer
+- **Platform:** ESP32 Dev Kit v1, Wi-Fi
+- **Power:** Solar tracking with battery backup
+
+### Overview
+
+The system monitors toxic gases such as ammonia and chlorine and neutralizes them, while also tracking environmental conditions: temperature, humidity, sunlight intensity and wind speed. It runs on solar power with a tracking mount and battery backup, so it can operate as a self-contained station.
+
+### How it works
+- **Toxic gas sensing:** an MQ-135 air quality sensor detects ammonia (NH3) and other toxic gases.
+- **Gas neutralizer:** a servo-driven neutralizer with 180-degree movement neutralizes the detected gas.
+- **Weather monitoring:** a wind speed sensor measures wind, a DHT11 reads temperature and humidity, and sunlight intensity is monitored as well.
+- **Local display:** a 16x2 LCD shows system information.
+- **Connectivity:** the ESP32's built-in Wi-Fi connects the system to the internet.
+
+### Hardware
+- **Microcontroller:** ESP32 Dev Kit v1 (built-in Wi-Fi)
+- **Sensors:** MQ-135 air quality sensor (ammonia), wind speed sensor, DHT11 temperature & humidity sensor
+- **Actuator:** toxic gas neutralizer on a servo with 180-degree movement
+- **Display:** 16x2 LCD
+- **Power:** solar tracking system, power management system and battery backup
+
+Block diagrams, circuit diagrams and source code are confidential to the client.

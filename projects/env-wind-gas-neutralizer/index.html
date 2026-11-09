@@ -6,15 +6,23 @@
   <title>Environment &amp; Wind Monitor with Toxic Gas Neutralizer · Sakiul Mowla Ramim</title>
   <meta name="description" content="Solar-powered ESP32 station that detects toxic gases like ammonia and chlorine, neutralizes them with a 180-degree servo unit, and monitors wind and weather.">
   <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#070b14">
   <link rel="canonical" href="https://ramimiot.github.io/projects/env-wind-gas-neutralizer/">
 
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="IoTWithRamim · Sakiul Mowla Ramim">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Environment &amp; Wind Monitor with Toxic Gas Neutralizer · Sakiul Mowla Ramim">
   <meta property="og:description" content="Solar-powered ESP32 station that detects toxic gases like ammonia and chlorine, neutralizes them with a 180-degree servo unit, and monitors wind and weather.">
   <meta property="og:url" content="https://ramimiot.github.io/projects/env-wind-gas-neutralizer/">
-  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta property="og:image" content="https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/01.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="962">
+  <meta property="og:image:alt" content="Environment and wind speed monitoring station with gas neutralizer">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Environment &amp; Wind Monitor with Toxic Gas Neutralizer · Sakiul Mowla Ramim">
+  <meta name="twitter:description" content="Solar-powered ESP32 station that detects toxic gases like ammonia and chlorine, neutralizes them with a 180-degree servo unit, and monitors wind and weather.">
 
   <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
@@ -23,6 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/project.css">
+  <script src="../../assets/js/analytics.js" defer></script>
 
   <script>
     (function () {
@@ -36,15 +45,67 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Environment & Wind Monitor with Toxic Gas Neutralizer",
-    "description": "Solar-powered ESP32 station that detects toxic gases like ammonia and chlorine, neutralizes them with a 180-degree servo unit, and monitors wind and weather.",
-    "url": "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/",
-    "author": {
-      "@type": "Person",
-      "name": "Sakiul Mowla Ramim",
-      "url": "https://ramimiot.github.io/"
-    }
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "@id": "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/#project",
+        "name": "Environment & Wind Monitor with Toxic Gas Neutralizer",
+        "headline": "Environment & Wind Monitor with Toxic Gas Neutralizer",
+        "description": "Solar-powered ESP32 station that detects toxic gases like ammonia and chlorine, neutralizes them with a 180-degree servo unit, and monitors wind and weather.",
+        "url": "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/",
+        "genre": "Health & Safety",
+        "keywords": "ESP32, MQ-135, Wind speed sensor, DHT11, Servo, Solar tracking, 16x2 LCD, Wi-Fi",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "@id": "https://ramimiot.github.io/#person",
+          "name": "Sakiul Mowla Ramim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "creator": {
+          "@id": "https://ramimiot.github.io/#person"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://ramimiot.github.io/#website",
+          "name": "IoTWithRamim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "mainEntityOfPage": "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/",
+        "dateModified": "2026-11-09",
+        "image": [
+          "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/01.jpg",
+          "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/02.jpg",
+          "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/03.jpg",
+          "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/04.jpg",
+          "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/05.jpg"
+        ],
+        "thumbnailUrl": "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/01.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ramimiot.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://ramimiot.github.io/#projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Environment & Wind Monitor with Toxic Gas Neutralizer",
+            "item": "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -95,9 +156,9 @@
 <p>The system monitors toxic gases such as ammonia and chlorine and neutralizes them, while also tracking environmental conditions: temperature, humidity, sunlight intensity and wind speed. It runs on solar power with a tracking mount and battery backup, so it can operate as a self-contained station.</p>
 
 <div class="pj-gallery">
-  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Environment and wind speed monitoring station with gas neutralizer" loading="lazy" decoding="async"><figcaption>Environment and wind speed monitoring station with gas neutralizer</figcaption></figure>
-  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Environment and wind speed monitoring station with gas neutralizer" width="1280" height="962" loading="lazy" decoding="async"><figcaption>Environment and wind speed monitoring station with gas neutralizer</figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Environment &amp; Wind Monitor with Toxic Gas Neutralizer: photo 2" width="777" height="584" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Environment &amp; Wind Monitor with Toxic Gas Neutralizer: photo 3" width="1280" height="973" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <h2>How it works</h2>
@@ -119,8 +180,8 @@
 </ul>
 
 <div class="pj-gallery">
-  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Environment &amp; Wind Monitor with Toxic Gas Neutralizer: photo 4" width="587" height="587" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Environment &amp; Wind Monitor with Toxic Gas Neutralizer: photo 5" width="581" height="581" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <div class="pj-callout"><p>Block diagrams, circuit diagrams and source code are confidential to the client.</p></div>

@@ -6,15 +6,23 @@
   <title>Multi-Sensor Vehicle Safety &amp; Emergency Response · Sakiul Mowla Ramim</title>
   <meta name="description" content="ESP32 vehicle safety system that detects accidents, fire, gas leaks and temperature extremes, and sends four-level SMS alerts with GPS location over GSM.">
   <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#070b14">
   <link rel="canonical" href="https://ramimiot.github.io/projects/vehicle-safety/">
 
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="IoTWithRamim · Sakiul Mowla Ramim">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Multi-Sensor Vehicle Safety &amp; Emergency Response · Sakiul Mowla Ramim">
   <meta property="og:description" content="ESP32 vehicle safety system that detects accidents, fire, gas leaks and temperature extremes, and sends four-level SMS alerts with GPS location over GSM.">
   <meta property="og:url" content="https://ramimiot.github.io/projects/vehicle-safety/">
-  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta property="og:image" content="https://ramimiot.github.io/projects/vehicle-safety/img/01.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="1799">
+  <meta property="og:image:alt" content="Multi-Sensor Vehicle Safety &amp; Emergency Response: photo 1">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Multi-Sensor Vehicle Safety &amp; Emergency Response · Sakiul Mowla Ramim">
+  <meta name="twitter:description" content="ESP32 vehicle safety system that detects accidents, fire, gas leaks and temperature extremes, and sends four-level SMS alerts with GPS location over GSM.">
 
   <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
@@ -23,6 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/project.css">
+  <script src="../../assets/js/analytics.js" defer></script>
 
   <script>
     (function () {
@@ -36,15 +45,66 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Multi-Sensor Vehicle Safety & Emergency Response",
-    "description": "ESP32 vehicle safety system that detects accidents, fire, gas leaks and temperature extremes, and sends four-level SMS alerts with GPS location over GSM.",
-    "url": "https://ramimiot.github.io/projects/vehicle-safety/",
-    "author": {
-      "@type": "Person",
-      "name": "Sakiul Mowla Ramim",
-      "url": "https://ramimiot.github.io/"
-    }
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "@id": "https://ramimiot.github.io/projects/vehicle-safety/#project",
+        "name": "Multi-Sensor Vehicle Safety & Emergency Response",
+        "headline": "Multi-Sensor Vehicle Safety & Emergency Response",
+        "description": "ESP32 vehicle safety system that detects accidents, fire, gas leaks and temperature extremes, and sends four-level SMS alerts with GPS location over GSM.",
+        "url": "https://ramimiot.github.io/projects/vehicle-safety/",
+        "genre": "Health & Safety",
+        "keywords": "ESP32, MPU-6050, MQ-2 gas sensor, Flame sensor, DHT11, NEO-6M GPS, SIM800L GSM, SSD1306 OLED, 18650 2S BMS, mDNS web server",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "@id": "https://ramimiot.github.io/#person",
+          "name": "Sakiul Mowla Ramim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "creator": {
+          "@id": "https://ramimiot.github.io/#person"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://ramimiot.github.io/#website",
+          "name": "IoTWithRamim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "mainEntityOfPage": "https://ramimiot.github.io/projects/vehicle-safety/",
+        "dateModified": "2026-11-09",
+        "image": [
+          "https://ramimiot.github.io/projects/vehicle-safety/img/01.jpg",
+          "https://ramimiot.github.io/projects/vehicle-safety/img/02.jpg",
+          "https://ramimiot.github.io/projects/vehicle-safety/img/03.jpg",
+          "https://ramimiot.github.io/projects/vehicle-safety/img/04.jpg"
+        ],
+        "thumbnailUrl": "https://ramimiot.github.io/projects/vehicle-safety/img/01.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ramimiot.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://ramimiot.github.io/#projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Multi-Sensor Vehicle Safety & Emergency Response",
+            "item": "https://ramimiot.github.io/projects/vehicle-safety/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -94,10 +154,10 @@
 <h2>Overview</h2>
 <p>The system brings several hazard sensors, GPS tracking and GSM communication together in one ESP32-based unit. It watches the vehicle continuously and, depending on how serious an incident is, notifies the driver, traffic control, the fire service and an ambulance, with the location ready to open in Google Maps.</p>
 <div class="pj-gallery">
-  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Multi-Sensor Vehicle Safety &amp; Emergency Response: photo 1" width="1280" height="1799" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Multi-Sensor Vehicle Safety &amp; Emergency Response: photo 2" width="576" height="1087" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Multi-Sensor Vehicle Safety &amp; Emergency Response: photo 3" width="729" height="415" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Multi-Sensor Vehicle Safety &amp; Emergency Response: photo 4" width="997" height="548" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <h2>System architecture</h2>

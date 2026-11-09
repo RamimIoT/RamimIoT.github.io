@@ -6,15 +6,23 @@
   <title>Mountain Collapse Alert &amp; Rainfall Monitor (GSM) · Sakiul Mowla Ramim</title>
   <meta name="description" content="ESP32 rain-gauge system that logs rainfall to a central database and raises real-time mountain-collapse alerts by buzzer and GSM SMS, with battery backup.">
   <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#070b14">
   <link rel="canonical" href="https://ramimiot.github.io/projects/mountain-collapse-alert/">
 
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="IoTWithRamim · Sakiul Mowla Ramim">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Mountain Collapse Alert &amp; Rainfall Monitor (GSM) · Sakiul Mowla Ramim">
   <meta property="og:description" content="ESP32 rain-gauge system that logs rainfall to a central database and raises real-time mountain-collapse alerts by buzzer and GSM SMS, with battery backup.">
   <meta property="og:url" content="https://ramimiot.github.io/projects/mountain-collapse-alert/">
-  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta property="og:image" content="https://ramimiot.github.io/projects/mountain-collapse-alert/img/01.jpg">
+  <meta property="og:image:width" content="367">
+  <meta property="og:image:height" content="276">
+  <meta property="og:image:alt" content="Rainfall monitoring and mountain collapse alert system">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mountain Collapse Alert &amp; Rainfall Monitor (GSM) · Sakiul Mowla Ramim">
+  <meta name="twitter:description" content="ESP32 rain-gauge system that logs rainfall to a central database and raises real-time mountain-collapse alerts by buzzer and GSM SMS, with battery backup.">
 
   <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
@@ -23,6 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/project.css">
+  <script src="../../assets/js/analytics.js" defer></script>
 
   <script>
     (function () {
@@ -36,15 +45,68 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Mountain Collapse Alert & Rainfall Monitor (GSM)",
-    "description": "ESP32 rain-gauge system that logs rainfall to a central database and raises real-time mountain-collapse alerts by buzzer and GSM SMS, with battery backup.",
-    "url": "https://ramimiot.github.io/projects/mountain-collapse-alert/",
-    "author": {
-      "@type": "Person",
-      "name": "Sakiul Mowla Ramim",
-      "url": "https://ramimiot.github.io/"
-    }
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "@id": "https://ramimiot.github.io/projects/mountain-collapse-alert/#project",
+        "name": "Mountain Collapse Alert & Rainfall Monitor (GSM)",
+        "headline": "Mountain Collapse Alert & Rainfall Monitor (GSM)",
+        "description": "ESP32 rain-gauge system that logs rainfall to a central database and raises real-time mountain-collapse alerts by buzzer and GSM SMS, with battery backup.",
+        "url": "https://ramimiot.github.io/projects/mountain-collapse-alert/",
+        "genre": "Utilities & City",
+        "keywords": "ESP32, Rain gauge, GSM / SMS, Central database, 16x2 LCD, Buzzer alarm, Battery backup",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "@id": "https://ramimiot.github.io/#person",
+          "name": "Sakiul Mowla Ramim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "creator": {
+          "@id": "https://ramimiot.github.io/#person"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://ramimiot.github.io/#website",
+          "name": "IoTWithRamim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "mainEntityOfPage": "https://ramimiot.github.io/projects/mountain-collapse-alert/",
+        "dateModified": "2026-11-09",
+        "image": [
+          "https://ramimiot.github.io/projects/mountain-collapse-alert/img/01.jpg",
+          "https://ramimiot.github.io/projects/mountain-collapse-alert/img/02.jpg",
+          "https://ramimiot.github.io/projects/mountain-collapse-alert/img/03.jpg",
+          "https://ramimiot.github.io/projects/mountain-collapse-alert/img/04.jpg",
+          "https://ramimiot.github.io/projects/mountain-collapse-alert/img/05.jpg",
+          "https://ramimiot.github.io/projects/mountain-collapse-alert/img/06.jpg"
+        ],
+        "thumbnailUrl": "https://ramimiot.github.io/projects/mountain-collapse-alert/img/01.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ramimiot.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://ramimiot.github.io/#projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Mountain Collapse Alert & Rainfall Monitor (GSM)",
+            "item": "https://ramimiot.github.io/projects/mountain-collapse-alert/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -95,9 +157,9 @@
 <p>This project aims to prevent landslides in mountainous regions. It measures rainfall with a rain gauge, sends the readings to a central database, and uses the calculated rainfall to raise advance mountain-collapse alerts in real time, locally with a buzzer and remotely by SMS over GSM.</p>
 
 <div class="pj-gallery">
-  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Rainfall monitoring and mountain collapse alert system" loading="lazy" decoding="async"><figcaption>Rainfall monitoring and mountain collapse alert system</figcaption></figure>
-  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Rainfall monitoring and mountain collapse alert system" width="367" height="276" loading="lazy" decoding="async"><figcaption>Rainfall monitoring and mountain collapse alert system</figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Mountain Collapse Alert &amp; Rainfall Monitor (GSM): photo 2" width="278" height="209" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Mountain Collapse Alert &amp; Rainfall Monitor (GSM): photo 3" width="760" height="578" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <h2>How it works</h2>
@@ -119,10 +181,10 @@
 </ul>
 
 <div class="pj-gallery">
-  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="7"><img src="img/07.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Mountain Collapse Alert &amp; Rainfall Monitor (GSM): photo 4" width="367" height="367" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Mountain Collapse Alert &amp; Rainfall Monitor (GSM): photo 5" width="1152" height="1152" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Mountain Collapse Alert &amp; Rainfall Monitor (GSM): photo 6" width="1152" height="1152" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="7"><img src="img/07.jpg" alt="Mountain Collapse Alert &amp; Rainfall Monitor (GSM): photo 7" width="367" height="367" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <div class="pj-callout"><p>Block diagrams, circuit diagrams and source code are confidential to the client.</p></div>

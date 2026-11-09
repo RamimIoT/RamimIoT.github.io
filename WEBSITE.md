@@ -18,8 +18,10 @@ Portfolio/
 ├── index.html                      # Home page: all sections and the project cards
 ├── projects/<slug>/index.html      # One case-study page per project (20 pages)
 ├── 404.html                        # Standalone "Page not found" page (served by GitHub Pages)
-├── robots.txt                      # Allows all crawlers, points to the sitemap
-├── sitemap.xml                     # Home page plus every project page
+├── robots.txt                      # Allows all crawlers (AI crawlers listed explicitly), points to the sitemap
+├── sitemap.xml                     # Home page plus every project page, with image entries
+├── llms.txt                        # Short profile and project index for AI assistants
+├── llms-full.txt                   # Text of every page as markdown, for AI assistants
 ├── .nojekyll                       # Tells GitHub Pages to serve files as-is (no Jekyll)
 ├── WEBSITE.md                      # This guide (README.md is the CV)
 └── assets/
@@ -29,7 +31,8 @@ Portfolio/
     │   └── project.css             # Extra styles for the project pages
     ├── js/
     │   ├── main.js                 # Theme toggle, nav, project filters, simulated telemetry
-    │   └── project.js              # Project pages: theme toggle, image zoom
+    │   ├── project.js              # Project pages: theme toggle, image zoom
+    │   └── analytics.js            # Google Analytics 4 (set GA_ID at the top) and click events
     └── img/
         ├── logo-256.png            # IoTWithRamim logo (header, 404 page)
         ├── favicon-64.png          # browser-tab icon
@@ -66,6 +69,31 @@ Later updates go live automatically after each `git push`.
 
 Keep asset links in `index.html`
 **relative** (for example `assets/css/style.css`, not `/assets/css/style.css`).
+
+## Google Analytics
+
+`assets/js/analytics.js` loads Google Analytics 4 on every page. Put the Measurement ID
+(`G-XXXXXXXXXX`, from analytics.google.com → Admin → Data streams → Web) in `GA_ID` at the top
+of the file and push. While `GA_ID` is empty, or the site is opened locally, nothing is loaded.
+
+Besides page views, it sends these events:
+
+- `contact` with `method` = email, phone, whatsapp, linkedin or copy_email
+- `filter_projects` with `filter`, when a project filter is used
+- `select_content` with `item_id`, when a project page is opened from a card or the Next/Previous links
+- `ai_referral` with `ai_source`, when a visit comes from ChatGPT, Perplexity, Claude, Gemini, Copilot
+  and similar AI tools (by referrer or `utm_source`)
+
+CV downloads and outbound links are recorded by GA4's built-in enhanced measurement.
+
+## Search engines and AI assistants
+
+- Every page has a canonical URL, Open Graph/Twitter tags and schema.org structured data:
+  `Person`, `WebSite`, `ProfilePage` and a project list on the home page; `CreativeWork` and
+  `BreadcrumbList` on each project page.
+- `llms.txt` and `llms-full.txt` give AI assistants a plain-text summary and the full site text.
+  After changing page text, regenerate `llms-full.txt` (or edit it by hand) so it stays in sync.
+- When you add a project page, add it to `sitemap.xml` and `llms.txt` as well.
 
 ## Editing content
 

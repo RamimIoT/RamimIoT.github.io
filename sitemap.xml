@@ -1,109 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ramimiot.github.io/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image><image:loc>https://ramimiot.github.io/assets/img/og-image.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://ramimiot.github.io/projects/aquaculture/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/cow-health/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/env-wind-gas-neutralizer/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/flood-detection/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/indoor-fire-fighter/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/landslide-warning/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/mountain-collapse-alert/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/nfn-lr/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/aquaculture/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/aquaculture/img/02.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://ramimiot.github.io/projects/nfn-sen/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-sen/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-sen/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-sen/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-sen/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-sen/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-sen/img/06.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://ramimiot.github.io/projects/nfn-sw/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-sw/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-sw/img/02.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://ramimiot.github.io/projects/patient-health/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://ramimiot.github.io/projects/nfn-lr/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/predictive-maintenance-bat/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-lr/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/nfn-lr/img/02.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://ramimiot.github.io/projects/production-monitor/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/production-monitor/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/production-monitor/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/production-monitor/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/production-monitor/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/production-monitor/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/production-monitor/img/06.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://ramimiot.github.io/projects/security-bot/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://ramimiot.github.io/projects/predictive-maintenance-bat/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/predictive-maintenance-bat/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/predictive-maintenance-bat/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/predictive-maintenance-bat/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/predictive-maintenance-bat/img/04.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://ramimiot.github.io/projects/smart-farm-thesis/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://ramimiot.github.io/projects/landslide-warning/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/landslide-warning/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/landslide-warning/img/02.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://ramimiot.github.io/projects/smart-irrigation/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://ramimiot.github.io/projects/mountain-collapse-alert/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/thingspeak-environment/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/traffic-street-light/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ramimiot.github.io/projects/vehicle-safety/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/mountain-collapse-alert/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/mountain-collapse-alert/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/mountain-collapse-alert/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/mountain-collapse-alert/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/mountain-collapse-alert/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/mountain-collapse-alert/img/06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/mountain-collapse-alert/img/07.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://ramimiot.github.io/projects/water-logging-cv/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/water-logging-cv/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/water-logging-cv/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/water-logging-cv/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/water-logging-cv/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/water-logging-cv/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/water-logging-cv/img/06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/water-logging-cv/img/07.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/traffic-street-light/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/traffic-street-light/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/traffic-street-light/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/traffic-street-light/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/traffic-street-light/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/traffic-street-light/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/traffic-street-light/img/06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/traffic-street-light/img/07.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/traffic-street-light/img/08.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/traffic-street-light/img/09.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/flood-detection/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/flood-detection/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/flood-detection/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/flood-detection/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/flood-detection/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/flood-detection/img/05.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/thingspeak-environment/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/thingspeak-environment/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/thingspeak-environment/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/thingspeak-environment/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/thingspeak-environment/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/thingspeak-environment/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/thingspeak-environment/img/06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/thingspeak-environment/img/07.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/thingspeak-environment/img/08.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/thingspeak-environment/img/09.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/smart-farm-thesis/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-farm-thesis/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-farm-thesis/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-farm-thesis/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-farm-thesis/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-farm-thesis/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-farm-thesis/img/06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-farm-thesis/img/07.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-farm-thesis/img/08.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/smart-irrigation/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-irrigation/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-irrigation/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-irrigation/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-irrigation/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-irrigation/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/smart-irrigation/img/06.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/cow-health/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/cow-health/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/cow-health/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/cow-health/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/cow-health/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/cow-health/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/cow-health/img/06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/cow-health/img/07.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/cow-health/img/08.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/vehicle-safety/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/vehicle-safety/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/vehicle-safety/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/vehicle-safety/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/vehicle-safety/img/04.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/patient-health/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/patient-health/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/patient-health/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/patient-health/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/patient-health/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/patient-health/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/patient-health/img/06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/patient-health/img/07.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/patient-health/img/08.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/patient-health/img/09.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/security-bot/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/security-bot/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/security-bot/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/security-bot/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/security-bot/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/security-bot/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/security-bot/img/06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/security-bot/img/07.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/security-bot/img/08.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/indoor-fire-fighter/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/indoor-fire-fighter/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/indoor-fire-fighter/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/indoor-fire-fighter/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/indoor-fire-fighter/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/indoor-fire-fighter/img/05.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/indoor-fire-fighter/img/06.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/indoor-fire-fighter/img/07.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ramimiot.github.io/projects/env-wind-gas-neutralizer/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/01.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ramimiot.github.io/projects/env-wind-gas-neutralizer/img/05.jpg</image:loc></image:image>
   </url>
 </urlset>

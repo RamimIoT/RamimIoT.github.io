@@ -6,15 +6,23 @@
   <title>IoT Security Bot: ESP32-CAM + Telegram with OTA · Sakiul Mowla Ramim</title>
   <meta name="description" content="Low-cost security camera: a PIR sensor triggers an ESP32-CAM that sends photos to Telegram, with Telegram controls and over-the-air firmware updates.">
   <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#070b14">
   <link rel="canonical" href="https://ramimiot.github.io/projects/security-bot/">
 
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="IoTWithRamim · Sakiul Mowla Ramim">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="IoT Security Bot: ESP32-CAM + Telegram with OTA · Sakiul Mowla Ramim">
   <meta property="og:description" content="Low-cost security camera: a PIR sensor triggers an ESP32-CAM that sends photos to Telegram, with Telegram controls and over-the-air firmware updates.">
   <meta property="og:url" content="https://ramimiot.github.io/projects/security-bot/">
-  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta property="og:image" content="https://ramimiot.github.io/projects/security-bot/img/01.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="962">
+  <meta property="og:image:alt" content="IoT Security Bot: ESP32-CAM + Telegram with OTA: photo 1">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IoT Security Bot: ESP32-CAM + Telegram with OTA · Sakiul Mowla Ramim">
+  <meta name="twitter:description" content="Low-cost security camera: a PIR sensor triggers an ESP32-CAM that sends photos to Telegram, with Telegram controls and over-the-air firmware updates.">
 
   <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
@@ -23,6 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/project.css">
+  <script src="../../assets/js/analytics.js" defer></script>
 
   <script>
     (function () {
@@ -36,15 +45,68 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "IoT Security Bot: ESP32-CAM + Telegram with OTA",
-    "description": "Low-cost security camera: a PIR sensor triggers an ESP32-CAM that sends photos to Telegram, with Telegram controls and over-the-air firmware updates.",
-    "url": "https://ramimiot.github.io/projects/security-bot/",
-    "author": {
-      "@type": "Person",
-      "name": "Sakiul Mowla Ramim",
-      "url": "https://ramimiot.github.io/"
-    }
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "@id": "https://ramimiot.github.io/projects/security-bot/#project",
+        "name": "IoT Security Bot: ESP32-CAM + Telegram with OTA",
+        "headline": "IoT Security Bot: ESP32-CAM + Telegram with OTA",
+        "description": "Low-cost security camera: a PIR sensor triggers an ESP32-CAM that sends photos to Telegram, with Telegram controls and over-the-air firmware updates.",
+        "url": "https://ramimiot.github.io/projects/security-bot/",
+        "genre": "Health & Safety",
+        "keywords": "ESP32-CAM, PIR motion sensor, Telegram Bot, OTA firmware updates, 3.7 V battery, Power-management circuit",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "@id": "https://ramimiot.github.io/#person",
+          "name": "Sakiul Mowla Ramim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "creator": {
+          "@id": "https://ramimiot.github.io/#person"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://ramimiot.github.io/#website",
+          "name": "IoTWithRamim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "mainEntityOfPage": "https://ramimiot.github.io/projects/security-bot/",
+        "dateModified": "2026-11-09",
+        "image": [
+          "https://ramimiot.github.io/projects/security-bot/img/01.jpg",
+          "https://ramimiot.github.io/projects/security-bot/img/02.jpg",
+          "https://ramimiot.github.io/projects/security-bot/img/03.jpg",
+          "https://ramimiot.github.io/projects/security-bot/img/04.jpg",
+          "https://ramimiot.github.io/projects/security-bot/img/05.jpg",
+          "https://ramimiot.github.io/projects/security-bot/img/06.jpg"
+        ],
+        "thumbnailUrl": "https://ramimiot.github.io/projects/security-bot/img/01.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ramimiot.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://ramimiot.github.io/#projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IoT Security Bot: ESP32-CAM + Telegram with OTA",
+            "item": "https://ramimiot.github.io/projects/security-bot/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -94,12 +156,12 @@
 <h2>Overview</h2>
 <p>The goal was a simple, affordable security system built with IoT technology. A small battery-powered ESP32-CAM unit watches an area, photographs any movement and delivers the pictures to Telegram, the same app used to control the device.</p>
 <div class="pj-gallery">
-  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="IoT Security Bot: ESP32-CAM + Telegram with OTA: photo 1" width="1280" height="962" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="IoT Security Bot: ESP32-CAM + Telegram with OTA: photo 2" width="1197" height="900" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="IoT Security Bot: ESP32-CAM + Telegram with OTA: photo 3" width="1280" height="714" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="IoT Security Bot: ESP32-CAM + Telegram with OTA: photo 4" width="1280" height="347" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="IoT Security Bot: ESP32-CAM + Telegram with OTA: photo 5" width="1280" height="974" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="IoT Security Bot: ESP32-CAM + Telegram with OTA: photo 6" width="922" height="1080" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <h2>How it works</h2>
@@ -124,8 +186,8 @@
   <li>3.7 V battery with a power-management circuit</li>
 </ul>
 <div class="pj-gallery">
-  <figure class="pj-fig" data-img="7"><img src="img/07.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-  <figure class="pj-fig" data-img="8"><img src="img/08.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="7"><img src="img/07.jpg" alt="IoT Security Bot: ESP32-CAM + Telegram with OTA: photo 7" width="922" height="2048" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="8"><img src="img/08.jpg" alt="IoT Security Bot: ESP32-CAM + Telegram with OTA: photo 8" width="922" height="2048" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <div class="pj-callout"><p>Block diagrams, flow charts, circuit diagrams and source code are not shared publicly.</p></div>

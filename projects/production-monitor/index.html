@@ -6,15 +6,23 @@
   <title>Worker Efficiency Monitor · Sakiul Mowla Ramim</title>
   <meta name="description" content="ESP32 FreeRTOS monitor for garment lines: live target-vs-actual efficiency on a TFT touchscreen, I2S voice alerts, SD logging, MQTT and an Android app.">
   <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#070b14">
   <link rel="canonical" href="https://ramimiot.github.io/projects/production-monitor/">
 
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="IoTWithRamim · Sakiul Mowla Ramim">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Worker Efficiency Monitor · Sakiul Mowla Ramim">
   <meta property="og:description" content="ESP32 FreeRTOS monitor for garment lines: live target-vs-actual efficiency on a TFT touchscreen, I2S voice alerts, SD logging, MQTT and an Android app.">
   <meta property="og:url" content="https://ramimiot.github.io/projects/production-monitor/">
-  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta property="og:image" content="https://ramimiot.github.io/projects/production-monitor/img/01.jpg">
+  <meta property="og:image:width" content="1152">
+  <meta property="og:image:height" content="1367">
+  <meta property="og:image:alt" content="Worker Efficiency Monitor: photo 1">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Worker Efficiency Monitor · Sakiul Mowla Ramim">
+  <meta name="twitter:description" content="ESP32 FreeRTOS monitor for garment lines: live target-vs-actual efficiency on a TFT touchscreen, I2S voice alerts, SD logging, MQTT and an Android app.">
 
   <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
@@ -23,6 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/project.css">
+  <script src="../../assets/js/analytics.js" defer></script>
 
   <script>
     (function () {
@@ -36,15 +45,68 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Worker Efficiency Monitor",
-    "description": "ESP32 FreeRTOS monitor for garment lines: live target-vs-actual efficiency on a TFT touchscreen, I2S voice alerts, SD logging, MQTT and an Android app.",
-    "url": "https://ramimiot.github.io/projects/production-monitor/",
-    "author": {
-      "@type": "Person",
-      "name": "Sakiul Mowla Ramim",
-      "url": "https://ramimiot.github.io/"
-    }
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "@id": "https://ramimiot.github.io/projects/production-monitor/#project",
+        "name": "Worker Efficiency Monitor",
+        "headline": "Worker Efficiency Monitor",
+        "description": "ESP32 FreeRTOS monitor for garment lines: live target-vs-actual efficiency on a TFT touchscreen, I2S voice alerts, SD logging, MQTT and an Android app.",
+        "url": "https://ramimiot.github.io/projects/production-monitor/",
+        "genre": "Industrial",
+        "keywords": "ESP32, FreeRTOS, ILI9341 TFT, PCF8574, MAX98357A I2S, SD card, MQTT, REST API, Android",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "@id": "https://ramimiot.github.io/#person",
+          "name": "Sakiul Mowla Ramim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "creator": {
+          "@id": "https://ramimiot.github.io/#person"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://ramimiot.github.io/#website",
+          "name": "IoTWithRamim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "mainEntityOfPage": "https://ramimiot.github.io/projects/production-monitor/",
+        "dateModified": "2026-11-09",
+        "image": [
+          "https://ramimiot.github.io/projects/production-monitor/img/01.jpg",
+          "https://ramimiot.github.io/projects/production-monitor/img/02.jpg",
+          "https://ramimiot.github.io/projects/production-monitor/img/03.jpg",
+          "https://ramimiot.github.io/projects/production-monitor/img/04.jpg",
+          "https://ramimiot.github.io/projects/production-monitor/img/05.jpg",
+          "https://ramimiot.github.io/projects/production-monitor/img/06.jpg"
+        ],
+        "thumbnailUrl": "https://ramimiot.github.io/projects/production-monitor/img/01.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ramimiot.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://ramimiot.github.io/#projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Worker Efficiency Monitor",
+            "item": "https://ramimiot.github.io/projects/production-monitor/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -97,8 +159,8 @@
 <h2>The solution</h2>
 <p>I engineered an edge-computing IIoT device that turns the production floor into a game. It tracks target vs. actual metrics in real time, adjusts goals dynamically with a carry-over algorithm, and uses visual and audio feedback to keep each worker in the green zone.</p>
 <div class="pj-gallery">
-<figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Worker Efficiency Monitor" loading="lazy" decoding="async"><figcaption>Worker Efficiency Monitor</figcaption></figure>
-<figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+<figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Worker Efficiency Monitor: photo 1" width="1152" height="1367" loading="lazy" decoding="async"><figcaption>Worker Efficiency Monitor</figcaption></figure>
+<figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Worker Efficiency Monitor: photo 2" width="1263" height="720" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <h2>Hardware</h2>
@@ -111,8 +173,8 @@
 <li><strong>Storage:</strong> SD card (SPI) for configuration, assets and Excel-compatible CSV logs.</li>
 </ul>
 <div class="pj-gallery">
-<figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Touchscreen interface and push-button input" loading="lazy" decoding="async"><figcaption>Touchscreen interface and push-button input</figcaption></figure>
-<figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+<figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Touchscreen interface and push-button input" width="607" height="720" loading="lazy" decoding="async"><figcaption>Touchscreen interface and push-button input</figcaption></figure>
+<figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Worker Efficiency Monitor: photo 4" width="1263" height="720" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <h2>Firmware architecture: FreeRTOS</h2>
@@ -129,8 +191,8 @@
 <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Power-loss recovery:</strong> the running state is written to storage every few seconds, so after a power cut the device resumes exactly where it left off.</span></li>
 </ul>
 <div class="pj-gallery">
-<figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
-<figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+<figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Worker Efficiency Monitor: photo 5" width="971" height="1152" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+<figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Worker Efficiency Monitor: photo 6" width="1280" height="729" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <h2>Software ecosystem and connectivity</h2>

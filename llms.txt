@@ -1,0 +1,42 @@
+# Sakiul Mowla Ramim (IoTWithRamim)
+
+> Sakiul Mowla Ramim (IoTWithRamim) — Lead IoT & Embedded Systems Engineer from Bangladesh. Custom PCBs, FreeRTOS firmware, industrial protocols and multi-tenant IoT platforms that sense, decide and act.
+
+Sakiul Mowla Ramim is a Lead IoT Engineer at SmartData Technologies Limited in Bangladesh, publishing as IoTWithRamim. He has 5+ years of experience designing IoT hardware, FreeRTOS firmware, industrial protocols (Modbus, BACnet, LoRaWAN, MQTT) and multi-tenant IoT platforms for aquaculture, utilities, energy, agriculture and industry. He is based in Chittagong, Bangladesh, and is open to IoT, embedded and edge-platform roles and collaborations, including relocation.
+
+## Profile
+
+- [Portfolio home page](https://ramimiot.github.io/): about, featured work, all projects, experience, skills and contact
+- [CV (PDF)](https://ramimiot.github.io/assets/Sakiul_Mowla_Ramim_CV.pdf): full CV with experience, education and certifications
+- [Full site text for AI assistants](https://ramimiot.github.io/llms-full.txt): every page of this site as plain markdown
+- [LinkedIn](https://linkedin.com/in/ramim256)
+- [GitHub](https://github.com/RamimIoT)
+- [YouTube: IoTWithRamim](https://www.youtube.com/@IoTWithRamim)
+
+## Projects
+
+- [Smart Aquaculture Ecosystem](https://ramimiot.github.io/projects/aquaculture/): End-to-end IoT ecosystem for precision fish farming: ESP32 sensing, switching and laser-repellent units on a unified MQTT API, solar powered and OTA managed.
+- [NFN Sensor Unit (SEN v1 & v2)](https://ramimiot.github.io/projects/nfn-sen/): Solar-powered floating water-quality profiler for fish ponds: ESP32, RS-485 Modbus and ADS1115 sensing of DO, pH, ORP, turbidity, TDS, temperature and level.
+- [NFN Switching Unit (SW)](https://ramimiot.github.io/projects/nfn-sw/): ESP32 8-channel IoT actuator that switches aerators, feeders and pumps on fish farms from cloud logic over MQTT, with sub-200 ms triggering and OTA updates.
+- [NFN Laser Repellent (LR)](https://ramimiot.github.io/projects/nfn-lr/): Non-lethal ESP32 laser deterrent for fish farms: a 520 nm green laser on a pan-tilt mount sweeps ponds, with an AI-vision v2 that targets detected birds.
+- [Worker Efficiency Monitor](https://ramimiot.github.io/projects/production-monitor/): ESP32 FreeRTOS monitor for garment lines: live target-vs-actual efficiency on a TFT touchscreen, I2S voice alerts, SD logging, MQTT and an Android app.
+- [Predictive Maintenance for British American Tobacco Bangladesh](https://ramimiot.github.io/projects/predictive-maintenance-bat/): Industrial IoT predictive maintenance for British American Tobacco Bangladesh: sensor nodes and machine learning that predict and prevent equipment failures.
+- [Heavy Rain & Landslide Warning Device](https://ramimiot.github.io/projects/landslide-warning/): IoT early-warning device for the Ukhiya Rohingya Camp that monitors heavy rainfall in landslide-prone areas and alerts residents by siren and officials by SMS.
+- [Mountain Collapse Alert & Rainfall Monitor (GSM)](https://ramimiot.github.io/projects/mountain-collapse-alert/): ESP32 rain-gauge system that logs rainfall to a central database and raises real-time mountain-collapse alerts by buzzer and GSM SMS, with battery backup.
+- [Water Logging Monitoring with Computer Vision & IoT](https://ramimiot.github.io/projects/water-logging-cv/): Real-time water logging detection that combines IoT sensors with a pre-trained YOLOv4 model on a cloud server, plus e-mail alerts and cloud-based monitoring.
+- [Energy-Efficient Traffic & Street Light Management](https://ramimiot.github.io/projects/traffic-street-light/): Solar IoT system that dims street lights by road motion, detects faulty lamps, adapts traffic signals to density, and reports via ThingSpeak and a mobile app.
+- [Real-Time Flood Detection & Alarm System](https://ramimiot.github.io/projects/flood-detection/): Solar-powered ESP32 flood monitor that tracks water level, flow and rain, sounds a buzzer alarm, and alerts users over Wi-Fi or GSM via Arduino IoT Cloud.
+- [Environment Monitoring & Visualization with ThingSpeak](https://ramimiot.github.io/projects/thingspeak-environment/): Arduino Uno and ESP-01 station that measures pH, air quality, soil moisture, temperature and wind flow and sends it to ThingSpeak for storage and charts.
+- [Smart Agriculture Farm Management System (B.Sc. Thesis)](https://ramimiot.github.io/projects/smart-farm-thesis/): Solar-powered smart farm system from my B.Sc. thesis: soil, climate and gas sensors, a 24/7 ESP32-CAM, and Auto or Manual control from an Android app.
+- [Smart Irrigation System (ESP32 + Arduino IoT Cloud)](https://ramimiot.github.io/projects/smart-irrigation/): ESP32 smart irrigation system that waters crops by soil-moisture and water-level thresholds, with web and mobile monitoring and control via Arduino IoT Cloud.
+- [Cow Health Monitoring & Alert System](https://ramimiot.github.io/projects/cow-health/): ESP32 cow health monitor tracking heart rate, SpO2, body temperature, movement and ambient climate, with email alerts, a mobile app and OTA firmware updates.
+- [Multi-Sensor Vehicle Safety & Emergency Response](https://ramimiot.github.io/projects/vehicle-safety/): ESP32 vehicle safety system that detects accidents, fire, gas leaks and temperature extremes, and sends four-level SMS alerts with GPS location over GSM.
+- [Patient Health Monitoring & Alert System](https://ramimiot.github.io/projects/patient-health/): ESP32-based patient health monitoring system that tracks vital signs with multiple sensors, shows readings on an OLED and sends email and mobile-app alerts.
+- [IoT Security Bot: ESP32-CAM + Telegram with OTA](https://ramimiot.github.io/projects/security-bot/): Low-cost security camera: a PIR sensor triggers an ESP32-CAM that sends photos to Telegram, with Telegram controls and over-the-air firmware updates.
+- [Indoor Fire Fighter System (ESP32 + IoT Cloud)](https://ramimiot.github.io/projects/indoor-fire-fighter/): ESP32 indoor fire-fighting system: MQ2 gas sensing with exhaust fan, flame sensors, a servo-aimed water pump, buzzer alarm and Arduino IoT Cloud dashboard.
+- [Environment & Wind Monitor with Toxic Gas Neutralizer](https://ramimiot.github.io/projects/env-wind-gas-neutralizer/): Solar-powered ESP32 station that detects toxic gases like ammonia and chlorine, neutralizes them with a 180-degree servo unit, and monitors wind and weather.
+
+## Contact
+
+- E-mail: ramim.cse.uctc@gmail.com
+- Phone / WhatsApp: +880 1836-655062

@@ -6,15 +6,23 @@
   <title>NFN Laser Repellent (LR) · Sakiul Mowla Ramim</title>
   <meta name="description" content="Non-lethal ESP32 laser deterrent for fish farms: a 520 nm green laser on a pan-tilt mount sweeps ponds, with an AI-vision v2 that targets detected birds.">
   <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#070b14">
   <link rel="canonical" href="https://ramimiot.github.io/projects/nfn-lr/">
 
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="IoTWithRamim · Sakiul Mowla Ramim">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="NFN Laser Repellent (LR) · Sakiul Mowla Ramim">
   <meta property="og:description" content="Non-lethal ESP32 laser deterrent for fish farms: a 520 nm green laser on a pan-tilt mount sweeps ponds, with an AI-vision v2 that targets detected birds.">
   <meta property="og:url" content="https://ramimiot.github.io/projects/nfn-lr/">
-  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta property="og:image" content="https://ramimiot.github.io/projects/nfn-lr/img/01.jpg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1518">
+  <meta property="og:image:alt" content="LR v1.0 servo pan-tilt laser unit">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NFN Laser Repellent (LR) · Sakiul Mowla Ramim">
+  <meta name="twitter:description" content="Non-lethal ESP32 laser deterrent for fish farms: a 520 nm green laser on a pan-tilt mount sweeps ponds, with an AI-vision v2 that targets detected birds.">
 
   <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
@@ -23,6 +31,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/project.css">
+  <script src="../../assets/js/analytics.js" defer></script>
 
   <script>
     (function () {
@@ -36,15 +45,64 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "NFN Laser Repellent (LR)",
-    "description": "Non-lethal ESP32 laser deterrent for fish farms: a 520 nm green laser on a pan-tilt mount sweeps ponds, with an AI-vision v2 that targets detected birds.",
-    "url": "https://ramimiot.github.io/projects/nfn-lr/",
-    "author": {
-      "@type": "Person",
-      "name": "Sakiul Mowla Ramim",
-      "url": "https://ramimiot.github.io/"
-    }
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "@id": "https://ramimiot.github.io/projects/nfn-lr/#project",
+        "name": "NFN Laser Repellent (LR)",
+        "headline": "NFN Laser Repellent (LR)",
+        "description": "Non-lethal ESP32 laser deterrent for fish farms: a 520 nm green laser on a pan-tilt mount sweeps ponds, with an AI-vision v2 that targets detected birds.",
+        "url": "https://ramimiot.github.io/projects/nfn-lr/",
+        "genre": "Aquaculture",
+        "keywords": "ESP32, Servo pan-tilt (v1), Stepper motors (v2), 520 nm green laser, MQTT, RTSP, YOLOv8, DHT22",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "@id": "https://ramimiot.github.io/#person",
+          "name": "Sakiul Mowla Ramim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "creator": {
+          "@id": "https://ramimiot.github.io/#person"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://ramimiot.github.io/#website",
+          "name": "IoTWithRamim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "mainEntityOfPage": "https://ramimiot.github.io/projects/nfn-lr/",
+        "dateModified": "2026-11-09",
+        "image": [
+          "https://ramimiot.github.io/projects/nfn-lr/img/01.jpg",
+          "https://ramimiot.github.io/projects/nfn-lr/img/02.jpg"
+        ],
+        "thumbnailUrl": "https://ramimiot.github.io/projects/nfn-lr/img/01.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ramimiot.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Projects",
+            "item": "https://ramimiot.github.io/#projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "NFN Laser Repellent (LR)",
+            "item": "https://ramimiot.github.io/projects/nfn-lr/"
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -108,8 +166,8 @@
 <li><strong>Schedule-based activation:</strong> through the MQTT API the system can be scheduled to run only during peak predation hours (dawn and dusk), saving energy.</li>
 </ul>
 <div class="pj-gallery">
-<figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="LR v1.0 servo pan-tilt laser unit" loading="lazy" decoding="async"><figcaption>LR v1.0 servo pan-tilt laser unit</figcaption></figure>
-<figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+<figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="LR v1.0 servo pan-tilt laser unit" width="1080" height="1518" loading="lazy" decoding="async"><figcaption>LR v1.0 servo pan-tilt laser unit</figcaption></figure>
+<figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="NFN Laser Repellent (LR): photo 2" width="1080" height="730" loading="lazy" decoding="async"><figcaption></figcaption></figure>
 </div>
 
 <h2>LR v2.0: the AI-vision hunter (advanced prototype)</h2>
