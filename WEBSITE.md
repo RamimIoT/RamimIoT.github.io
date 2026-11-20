@@ -17,6 +17,7 @@ It is a plain static site (HTML, CSS and vanilla JavaScript, no build step), hos
 Portfolio/
 ├── index.html                      # Home page: all sections and the project cards
 ├── projects/<slug>/index.html      # One case-study page per project (20 pages)
+├── consulting/index.html          # Consulting page: services, packages, case studies, booking form
 ├── 404.html                        # Standalone "Page not found" page (served by GitHub Pages)
 ├── robots.txt                      # Allows all crawlers (AI crawlers listed explicitly), points to the sitemap
 ├── sitemap.xml                     # Home page plus every project page, with image entries
@@ -32,6 +33,7 @@ Portfolio/
     ├── js/
     │   ├── main.js                 # Theme toggle, nav, project filters, simulated telemetry
     │   ├── project.js              # Project pages: theme toggle, image zoom
+    │   ├── consulting.js           # Consulting booking form (pre-filled e-mail / WhatsApp)
     │   └── analytics.js            # Google Analytics 4 (set GA_ID at the top) and click events
     └── img/
         ├── logo-256.png            # IoTWithRamim logo (header, 404 page)
@@ -94,6 +96,14 @@ CV downloads and outbound links are recorded by GA4's built-in enhanced measurem
 - `llms.txt` and `llms-full.txt` give AI assistants a plain-text summary and the full site text.
   After changing page text, regenerate `llms-full.txt` (or edit it by hand) so it stays in sync.
 - When you add a project page, add it to `sitemap.xml` and `llms.txt` as well.
+
+## Consulting page
+
+`consulting/index.html` lists services, packages, case studies, process, FAQ and a booking form.
+The form needs no server: it opens the visitor's e-mail app (or WhatsApp) with the request filled in,
+and sends a `generate_lead` event to Google Analytics. The e-mail address and WhatsApp number are at
+the top of `assets/js/consulting.js`. Package names in the "What do you need?" list must match the
+`data-package` values on the package buttons.
 
 ## Editing content
 

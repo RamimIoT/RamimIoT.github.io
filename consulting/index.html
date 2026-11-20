@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IoT Consulting: Embedded, IIoT &amp; Platforms · Sakiul Mowla Ramim</title>
+  <meta name="description" content="IoT consulting by Sakiul Mowla Ramim: end-to-end product development, ESP32/STM32 firmware, PCB design, industrial automation, multi-tenant platforms and secure data pipelines.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/consulting/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IoTWithRamim · Sakiul Mowla Ramim">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="IoT Consulting: Embedded, IIoT &amp; Platforms · Sakiul Mowla Ramim">
+  <meta property="og:description" content="From sensor to dashboard: IoT product development, firmware, PCBs, industrial automation, multi-tenant platforms and secure data pipelines. Book a consultation.">
+  <meta property="og:url" content="https://ramimiot.github.io/consulting/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sakiul Mowla Ramim, Lead IoT Engineer: I build IoT systems that sense, decide and act.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IoT Consulting: Embedded, IIoT &amp; Platforms · Sakiul Mowla Ramim">
+  <meta name="twitter:description" content="From sensor to dashboard: IoT product development, firmware, PCBs, industrial automation, multi-tenant platforms and secure data pipelines. Book a consultation.">
+  <meta name="twitter:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+
+  <link rel="icon" href="../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/project.css">
+  <link rel="stylesheet" href="../assets/css/consulting.css">
+  <script src="../assets/js/analytics.js" defer></script>
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://ramimiot.github.io/consulting/#service",
+        "name": "IoTWithRamim IoT Consulting",
+        "url": "https://ramimiot.github.io/consulting/",
+        "description": "IoT consulting by Sakiul Mowla Ramim: end-to-end product development, ESP32/STM32 firmware, PCB design, industrial automation, multi-tenant platforms and secure data pipelines.",
+        "image": "https://ramimiot.github.io/assets/img/og-image.png",
+        "logo": "https://ramimiot.github.io/assets/img/logo-256.png",
+        "email": "ramim.cse.uctc@gmail.com",
+        "telephone": "+8801836655062",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chittagong",
+          "addressCountry": "BD"
+        },
+        "areaServed": "Worldwide",
+        "founder": {
+          "@type": "Person",
+          "@id": "https://ramimiot.github.io/#person",
+          "name": "Sakiul Mowla Ramim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "knowsAbout": [
+          "End-to-end IoT product development",
+          "Embedded firmware",
+          "Hardware & PCB design",
+          "Industrial automation & IIoT",
+          "Wireless connectivity",
+          "Multi-tenant IoT platforms",
+          "Secure data pipelines",
+          "Dashboards, alerts & apps",
+          "Edge AI & computer vision",
+          "Architecture review & audits",
+          "Deployment & fleet operations",
+          "Fractional IoT lead & training"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "IoT consulting packages",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Discovery & Architecture Sprint",
+                "description": "For an idea or problem that needs a clear, buildable plan before money is spent on hardware.",
+                "provider": {
+                  "@id": "https://ramimiot.github.io/#person"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Prototype / Proof of Concept",
+                "description": "For proving the idea works on real hardware, with real data, before a full build.",
+                "provider": {
+                  "@id": "https://ramimiot.github.io/#person"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Product Build: Pilot to Production",
+                "description": "For turning a proven prototype into a robust product you can deploy and manufacture.",
+                "provider": {
+                  "@id": "https://ramimiot.github.io/#person"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Multi-Tenant Platform & Data Pipeline",
+                "description": "For companies that need their own secure IoT cloud for many customers or sites.",
+                "provider": {
+                  "@id": "https://ramimiot.github.io/#person"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Industrial Integration & Automation",
+                "description": "For factories, utilities and buildings that want monitoring and control on existing equipment.",
+                "provider": {
+                  "@id": "https://ramimiot.github.io/#person"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Expert Review & Project Rescue",
+                "description": "For teams with a design to validate, or a project that is late, unstable or stuck.",
+                "provider": {
+                  "@id": "https://ramimiot.github.io/#person"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://ramimiot.github.io/consulting/",
+        "url": "https://ramimiot.github.io/consulting/",
+        "name": "IoT Consulting: Embedded, IIoT & Platforms · Sakiul Mowla Ramim",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://ramimiot.github.io/#website",
+          "name": "IoTWithRamim",
+          "url": "https://ramimiot.github.io/"
+        },
+        "about": {
+          "@id": "https://ramimiot.github.io/consulting/#service"
+        },
+        "dateModified": "2026-11-20",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://ramimiot.github.io/consulting/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you work with clients outside Bangladesh?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. I have worked remotely with international clients since 2021. Design, firmware and platform work is fully remote, and hardware can be built and tested in Bangladesh and shipped, or sourced in your country."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you only advise, or do you build too?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both. I can review and plan, or design the PCB, write the firmware, build the platform and support the field deployment myself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you work with our existing devices or cloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. I have integrated existing controllers over Modbus and BACnet, extend or fix existing firmware, and connect to the broker or cloud you already use instead of forcing a rebuild."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is a project priced?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "After the discovery call I send a written scope with a fixed quote per milestone. Open-ended work such as research or rescue can run on time and materials instead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will you sign an NDA, and who owns the work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, I'm happy to sign an NDA before we discuss details. Ownership of designs and source code is agreed in the proposal; by default, deliverables are handed over to you once paid."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do you need from me to get started?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A short description of the problem, where the devices will run, roughly how many you need, and your timeline. Use the form below and I'll reply with a time for the discovery call."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ramimiot.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Consulting",
+            "item": "https://ramimiot.github.io/consulting/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-chip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></g></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-radio" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></g></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 5-10 5L2 7l10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></g></symbol>
+      <symbol id="i-factory" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V9l6 4V9l6 4V4h6v16H2Z"/><path d="M6 16h2M11 16h2M16 16h2"/></g></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></g></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></g></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></g></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0 5 5l-8.4 8.4a2.1 2.1 0 0 1-3-3l8.4-8.4a4 4 0 0 0-2-2Z"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></g></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></g></symbol>
+      <symbol id="i-rocket" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2Z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></g></symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6"/></g></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="cs-nav">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#case-studies">Case studies</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-primary" href="#book">Book a call</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container cs-hero-grid">
+        <div>
+          <a class="pj-back" href="../"><svg class="ico"><use href="#i-arrow"/></svg> Back to portfolio</a>
+          <p class="eyebrow">Consulting · IoTWithRamim</p>
+          <h1>IoT systems, engineered <span class="grad">from sensor to dashboard</span>.</h1>
+          <p class="lead">
+            I help companies design, build and scale connected products: custom hardware and firmware,
+            industrial automation, multi-tenant IoT platforms and secure data pipelines. One engineer who
+            owns the whole stack, so nothing gets lost between the PCB, the broker and the dashboard.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#book">Book a consultation <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#packages">See service packages</a>
+          </div>
+          <ul class="chips" aria-label="Core technologies">
+            <li>ESP32 · STM32</li><li>FreeRTOS</li><li>MQTT</li><li>Modbus · BACnet</li><li>LoRaWAN</li><li>TimescaleDB</li><li>Docker</li>
+          </ul>
+        </div>
+        <ul class="cs-proof" aria-label="Track record">
+          <li><strong>5+ yrs</strong><span>building IoT hardware, firmware and platforms</span></li>
+          <li><strong>20+</strong><span>documented projects across aquaculture, industry, utilities, agriculture and safety</span></li>
+          <li><strong>~25%</strong><span>energy cut with Oxygen-Demand aeration control</span></li>
+          <li><strong>440</strong><span>automated tests behind my multi-tenant IoT platform</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">01 · Services</p>
+          <h2>Everything a connected product needs</h2>
+          <p class="section-sub">Hire me for one layer or the whole system. Every service below builds on work I have done in real projects.</p>
+        </header>
+        <div class="svc-grid">
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-rocket"/></svg></span>
+            <h3>End-to-end IoT product development</h3>
+            <p>From an idea on paper to devices in the field, with one engineer accountable for the whole chain.</p>
+            <ul><li>Requirements and system architecture</li><li>Prototype to pilot to small-batch production</li><li>Documentation and manufacturing handover</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-code"/></svg></span>
+            <h3>Embedded firmware</h3>
+            <p>Reliable, non-blocking firmware for microcontrollers that run unattended in the field.</p>
+            <ul><li>ESP32, ESP8266, STM32 in C/C++ and FreeRTOS</li><li>Low-power deep sleep, watchdogs, power-loss recovery</li><li>OTA updates and captive-portal provisioning</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-chip"/></svg></span>
+            <h3>Hardware &amp; PCB design</h3>
+            <p>Custom boards built for harsh, noisy and off-grid sites.</p>
+            <ul><li>2-layer PCB design in EasyEDA</li><li>Galvanic isolation, snubbers, high-voltage AC switching</li><li>Solar power and battery management (BMS)</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-factory"/></svg></span>
+            <h3>Industrial automation &amp; IIoT</h3>
+            <p>Connect machines, meters and controllers you already own, and automate them safely.</p>
+            <ul><li>Modbus RTU/TCP over RS-485, BACnet</li><li>Edge gateways on ESP32, Raspberry Pi, Orange Pi</li><li>Rules with hysteresis, cooldowns and human approval</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-radio"/></svg></span>
+            <h3>Wireless connectivity</h3>
+            <p>The right link for each site, from a farm pond to a city utility's meter network.</p>
+            <ul><li>LoRaWAN gateways and end devices</li><li>GSM/GPRS with SMS alerts and remote control</li><li>Wi-Fi, BLE and ESP-NOW mesh</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-layers"/></svg></span>
+            <h3>Multi-tenant IoT platforms</h3>
+            <p>One platform that serves many customers, with each one's data kept strictly apart.</p>
+            <ul><li>Organisations, sites, gateways and devices</li><li>Per-tenant broker ACLs and database row-level security</li><li>Automation engine, live dashboards and reports</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-shield"/></svg></span>
+            <h3>Secure data pipelines</h3>
+            <p>Telemetry that arrives complete, stays private and can be audited later.</p>
+            <ul><li>MQTT brokers (EMQX, Mosquitto) with per-tenant credentials and ACLs</li><li>TimescaleDB, InfluxDB and PostgreSQL storage</li><li>Backups, retention and raw-data capture for replay</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-chart"/></svg></span>
+            <h3>Dashboards, alerts &amp; apps</h3>
+            <p>Turn readings into decisions that operators actually see.</p>
+            <ul><li>Grafana, Node-RED and Next.js dashboards</li><li>E-mail, Telegram and SMS alerts; daily PDF reports</li><li>Android companion and MVP apps</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-eye"/></svg></span>
+            <h3>Edge AI &amp; computer vision</h3>
+            <p>Cameras and models that trigger real-world actions.</p>
+            <ul><li>YOLO object detection on RTSP camera streams</li><li>Edge boards such as Radxa ROCK 5B+ and DeepX NPU</li><li>Vision linked to actuators and alerts</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-search"/></svg></span>
+            <h3>Architecture review &amp; audits</h3>
+            <p>A second pair of expert eyes before you scale, or when something keeps failing.</p>
+            <ul><li>Firmware and hardware design review</li><li>IoT security and tenant-isolation review</li><li>Rescue plans for stalled or unstable projects</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-wrench"/></svg></span>
+            <h3>Deployment &amp; fleet operations</h3>
+            <p>Getting devices installed, updated and kept healthy at scale.</p>
+            <ul><li>Field installation and commissioning support</li><li>OTA rollouts and remote management over SSH</li><li>Docker-based, one-command server installs</li></ul>
+          </article>
+          <article class="svc">
+            <span class="svc-ico"><svg class="ico"><use href="#i-users"/></svg></span>
+            <h3>Fractional IoT lead &amp; training</h3>
+            <p>Senior IoT leadership without a full-time hire.</p>
+            <ul><li>Technical roadmap and hardware sourcing strategy</li><li>Mentoring firmware and platform developers</li><li>Team training on ESP32, MQTT and industrial protocols</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOCUS AREAS -->
+    <section class="section" id="expertise">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">02 · Core expertise</p>
+          <h2>Four areas where I make the biggest difference</h2>
+        </header>
+
+        <article class="focus">
+          <div class="focus-body">
+            <p class="tag tag-accent">End-to-end IoT</p>
+            <h3>One owner from the sensor to the decision</h3>
+            <p class="feature-lead">Most IoT projects fail at the seams: hardware that the firmware can't drive reliably, or data the platform can't trust. I design all of it together, so each layer is built for the next.</p>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Sense:</strong> sensors, signal conditioning and enclosures chosen for the real site, not the lab.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Decide:</strong> rules and logic at the edge or in the cloud, with safe fallbacks when the network drops.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Act:</strong> relays, pumps and aerators switched with acknowledgements, so you know it really happened.</span></li>
+            </ul>
+          </div>
+          <figure class="focus-visual">
+            <svg viewBox="0 0 420 210" role="img" aria-labelledby="dg1">
+              <title id="dg1">Sensor node, firmware, gateway or broker, platform and dashboard, with commands flowing back to actuators.</title>
+              <g class="dg-e"><path d="M88 62h26M196 62h26M304 62h26"/><path d="M372 92v40H48V92" stroke-dasharray="5 4"/></g>
+              <g><rect class="dg-box" x="8" y="32" width="80" height="60" rx="10"/><text class="dg-t" x="48" y="58">Sensors</text><text class="dg-s" x="48" y="76">PCB · power</text></g>
+              <g><rect class="dg-box" x="114" y="32" width="82" height="60" rx="10"/><text class="dg-t" x="155" y="58">Firmware</text><text class="dg-s" x="155" y="76">FreeRTOS · OTA</text></g>
+              <g><rect class="dg-hl dg-box" x="222" y="32" width="82" height="60" rx="10"/><text class="dg-t" x="263" y="58">Broker</text><text class="dg-s" x="263" y="76">MQTT · ACL</text></g>
+              <g><rect class="dg-box" x="330" y="32" width="84" height="60" rx="10"/><text class="dg-t" x="372" y="58">Platform</text><text class="dg-s" x="372" y="76">rules · data</text></g>
+              <g><rect class="dg-ok dg-box" x="130" y="150" width="160" height="46" rx="10"/><text class="dg-t" x="210" y="171">Actuators</text><text class="dg-s" x="210" y="187">relays · pumps · aerators</text></g>
+              <text class="dg-cap" x="300" y="126">commands + ack</text>
+            </svg>
+            <figcaption>Readings flow up; commands flow back with acknowledgement.</figcaption>
+          </figure>
+        </article>
+
+        <article class="focus focus-rev">
+          <div class="focus-body">
+            <p class="tag tag-accent">Multi-tenant architecture</p>
+            <h3>Many customers, one platform, each one's data kept apart</h3>
+            <p class="feature-lead">I architected and built SmartSense, a multi-tenant IoT platform for every sensor and actuator product at SmartData Technologies. I bring the same principles to your platform.</p>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Isolation in four layers:</strong> per-organisation broker ACLs, server-verified sessions, PostgreSQL row-level security and composite foreign keys.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Proven by tests:</strong> negative tests that try to cross tenant boundaries, so isolation is checked, not assumed.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Operator features:</strong> sites and devices, live updates, drag-and-drop dashboards, alerts and immutable daily reports.</span></li>
+            </ul>
+          </div>
+          <figure class="focus-visual">
+            <svg viewBox="0 0 420 220" role="img" aria-labelledby="dg2">
+              <title id="dg2">Three tenants pass through four isolation layers: broker ACLs, verified sessions, row-level security and composite keys.</title>
+              <g><rect class="dg-box" x="10" y="14" width="120" height="34" rx="8"/><text class="dg-t" x="70" y="36">Tenant A</text></g>
+              <g><rect class="dg-box" x="150" y="14" width="120" height="34" rx="8"/><text class="dg-t" x="210" y="36">Tenant B</text></g>
+              <g><rect class="dg-box" x="290" y="14" width="120" height="34" rx="8"/><text class="dg-t" x="350" y="36">Tenant C</text></g>
+              <g><rect class="dg-hl dg-box" x="10" y="64" width="400" height="30" rx="8"/><text class="dg-t" x="210" y="84">1 · Broker ACL per organisation</text></g>
+              <g><rect class="dg-hl dg-box" x="10" y="100" width="400" height="30" rx="8"/><text class="dg-t" x="210" y="120">2 · Server-verified sessions</text></g>
+              <g><rect class="dg-hl dg-box" x="10" y="136" width="400" height="30" rx="8"/><text class="dg-t" x="210" y="156">3 · PostgreSQL row-level security</text></g>
+              <g><rect class="dg-ok dg-box" x="10" y="172" width="400" height="30" rx="8"/><text class="dg-t" x="210" y="192">4 · Composite foreign keys</text></g>
+            </svg>
+            <figcaption>Each request must pass every layer; a bug in one layer is caught by the next.</figcaption>
+          </figure>
+        </article>
+
+        <article class="focus">
+          <div class="focus-body">
+            <p class="tag tag-accent">Industrial automation</p>
+            <h3>Retrofit the plant you have, automate it safely</h3>
+            <p class="feature-lead">I connect existing controllers, meters and machines to modern monitoring and control, without ripping out working equipment.</p>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Protocols:</strong> Modbus RTU/TCP over RS-485 and BACnet, with sensor nodes hardened for high-interference factory floors.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Safe control:</strong> hysteresis, cooldowns, paired rules and "ask a person first" approvals before anything switches.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Reconciliation:</strong> compares what automation intended with what the relay reported, and corrects drift after power cuts.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Use cases:</strong> predictive maintenance, production and OEE monitoring, energy and aeration control.</span></li>
+            </ul>
+          </div>
+          <figure class="focus-visual">
+            <svg viewBox="0 0 420 200" role="img" aria-labelledby="dg3">
+              <title id="dg3">Existing PLCs, meters and drives connect over RS-485 Modbus or BACnet to an edge gateway, which runs rules and sends data to the platform.</title>
+              <g class="dg-e"><path d="M110 40h46M110 100h46M110 160h46"/><path d="M156 40v120"/><path d="M156 100h30M290 100h30"/></g>
+              <g><rect class="dg-box" x="10" y="20" width="100" height="40" rx="8"/><text class="dg-t" x="60" y="45">PLC</text></g>
+              <g><rect class="dg-box" x="10" y="80" width="100" height="40" rx="8"/><text class="dg-t" x="60" y="105">Energy meter</text></g>
+              <g><rect class="dg-box" x="10" y="140" width="100" height="40" rx="8"/><text class="dg-t" x="60" y="165">Motor / drive</text></g>
+              <text class="dg-cap" x="114" y="132">RS-485</text>
+              <g><rect class="dg-hl dg-box" x="186" y="70" width="104" height="60" rx="10"/><text class="dg-t" x="238" y="96">Edge gateway</text><text class="dg-s" x="238" y="114">Modbus · BACnet</text></g>
+              <g><rect class="dg-ok dg-box" x="320" y="70" width="92" height="60" rx="10"/><text class="dg-t" x="366" y="96">Platform</text><text class="dg-s" x="366" y="114">rules · alerts</text></g>
+            </svg>
+            <figcaption>Your controllers keep running while data and control move online.</figcaption>
+          </figure>
+        </article>
+
+        <article class="focus focus-rev">
+          <div class="focus-body">
+            <p class="tag tag-accent">Secure data pipelines</p>
+            <h3>Telemetry you can trust, from device to report</h3>
+            <p class="feature-lead">A pipeline is only as good as its weakest hop. I design each one so data is authenticated at the edge, survives outages and stays private in storage.</p>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>At the edge:</strong> scoped credentials and ACLs that lock each customer to its own topics, with TLS where the deployment needs it.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>No silent data loss:</strong> persistent broker sessions, QoS and a raw capture store you can replay.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>In storage:</strong> time-series databases with retention, tenant-scoped access and routine backups.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>For people:</strong> live dashboards, threshold alerts and immutable daily PDF reports for audits.</span></li>
+            </ul>
+          </div>
+          <figure class="focus-visual">
+            <svg viewBox="0 0 420 210" role="img" aria-labelledby="dg4">
+              <title id="dg4">Devices with scoped credentials publish to a broker with ACLs; a core service stores data in a time-series database with row-level security and a raw capture store, feeding dashboards, alerts and reports.</title>
+              <g class="dg-e"><path d="M96 50h28M222 50h28M300 80v28M172 80v40h60"/><path d="M300 152v20"/></g>
+              <g><rect class="dg-box" x="8" y="22" width="88" height="56" rx="10"/><text class="dg-t" x="52" y="46">Devices</text><text class="dg-s" x="52" y="64">scoped credentials</text></g>
+              <g><rect class="dg-hl dg-box" x="124" y="22" width="98" height="56" rx="10"/><text class="dg-t" x="173" y="46">Broker</text><text class="dg-s" x="173" y="64">ACL · persistent</text></g>
+              <g><rect class="dg-box" x="250" y="22" width="100" height="56" rx="10"/><text class="dg-t" x="300" y="46">Core service</text><text class="dg-s" x="300" y="64">ingest · rules</text></g>
+              <g><rect class="dg-box" x="232" y="108" width="136" height="44" rx="10"/><text class="dg-t" x="300" y="128">Time-series DB</text><text class="dg-s" x="300" y="144">RLS · retention</text></g>
+              <g><rect class="dg-box" x="100" y="108" width="110" height="44" rx="10"/><text class="dg-t" x="155" y="128">Raw capture</text><text class="dg-s" x="155" y="144">audit · replay</text></g>
+              <g><rect class="dg-ok dg-box" x="200" y="172" width="200" height="32" rx="10"/><text class="dg-t" x="300" y="193">Dashboards · alerts · reports</text></g>
+              <g class="dg-lock" transform="translate(104 8)"><rect x="0" y="6" width="12" height="9" rx="2"/><path d="M3 6V4a3 3 0 0 1 6 0v2"/></g>
+              <g class="dg-lock" transform="translate(370 116)"><rect x="0" y="6" width="12" height="9" rx="2"/><path d="M3 6V4a3 3 0 0 1 6 0v2"/></g>
+            </svg>
+            <figcaption>Authenticated at the edge, durable in transit, private at rest.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="section section-alt" id="industries">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">03 · Industries</p>
+          <h2>Industries I've built for</h2>
+        </header>
+        <ul class="ind-list">
+          <li><svg class="ico"><use href="#i-check"/></svg>Aquaculture &amp; fish farming</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Agriculture &amp; irrigation</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Water utilities &amp; smart metering</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Manufacturing &amp; garments (RMG)</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Energy &amp; building automation</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Disaster early warning</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Livestock &amp; health monitoring</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Transport &amp; vehicle safety</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Smart city &amp; street lighting</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section" id="packages">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">04 · Service packages</p>
+          <h2>Clear scopes, so you know what you get</h2>
+          <p class="section-sub">Start with the package that matches where you are. Every engagement gets a written scope and a fixed quote after a short discovery call.</p>
+        </header>
+        <div class="pkg-grid">
+          <article class="pkg">
+            <p class="pkg-k">01 · Plan</p>
+            <h3>Discovery &amp; Architecture Sprint</h3>
+            <p class="pkg-for">For an idea or problem that needs a clear, buildable plan before money is spent on hardware.</p>
+            <div class="pkg-meta"><span class="tag">Typical: 1–2 weeks</span><span class="tag">Remote</span></div>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Requirements workshop and site constraints</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>System architecture and data-flow diagram</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Hardware shortlist and BOM estimate</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Connectivity and power plan, risk list</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Phased roadmap with a fixed quote</span></li>
+            </ul>
+            <a class="btn btn-ghost btn-sm" href="#book" data-package="Discovery & Architecture Sprint">Get a quote</a>
+          </article>
+          <article class="pkg pkg-top">
+            <span class="pkg-badge">Best place to start</span>
+            <p class="pkg-k">02 · Prove</p>
+            <h3>Prototype / Proof of Concept</h3>
+            <p class="pkg-for">For proving the idea works on real hardware, with real data, before a full build.</p>
+            <div class="pkg-meta"><span class="tag">Typical: 3–6 weeks</span><span class="tag">Working demo</span></div>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Working device on dev boards or a first PCB</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Core firmware with sensing and control</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Cloud ingest and a live dashboard</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Field test and a findings report</span></li>
+            </ul>
+            <a class="btn btn-primary btn-sm" href="#book" data-package="Prototype / Proof of Concept">Get a quote</a>
+          </article>
+          <article class="pkg">
+            <p class="pkg-k">03 · Build</p>
+            <h3>Product Build: Pilot to Production</h3>
+            <p class="pkg-for">For turning a proven prototype into a robust product you can deploy and manufacture.</p>
+            <div class="pkg-meta"><span class="tag">Typical: 2–4 months</span><span class="tag">Milestones</span></div>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Custom PCB revisions with isolation and protection</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Hardened FreeRTOS firmware, OTA and provisioning</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Enclosure, power and installation design</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Pilot deployment and manufacturing handover pack</span></li>
+            </ul>
+            <a class="btn btn-ghost btn-sm" href="#book" data-package="Product Build: Pilot to Production">Get a quote</a>
+          </article>
+          <article class="pkg">
+            <p class="pkg-k">04 · Platform</p>
+            <h3>Multi-Tenant Platform &amp; Data Pipeline</h3>
+            <p class="pkg-for">For companies that need their own secure IoT cloud for many customers or sites.</p>
+            <div class="pkg-meta"><span class="tag">Typical: 1–3 months</span><span class="tag">Self-hosted</span></div>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span>MQTT broker with per-tenant ACLs and credentials</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Time-series database with row-level security</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Rules engine, alerts, dashboards and reports</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Docker deployment, backups and runbook</span></li>
+            </ul>
+            <a class="btn btn-ghost btn-sm" href="#book" data-package="Multi-Tenant Platform & Data Pipeline">Get a quote</a>
+          </article>
+          <article class="pkg">
+            <p class="pkg-k">05 · Automate</p>
+            <h3>Industrial Integration &amp; Automation</h3>
+            <p class="pkg-for">For factories, utilities and buildings that want monitoring and control on existing equipment.</p>
+            <div class="pkg-meta"><span class="tag">Typical: 2–8 weeks</span><span class="tag">On-site + remote</span></div>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Site survey and register-map integration (Modbus, BACnet)</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Edge gateway with local rules and buffering</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Safe relay and actuator control with approvals</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Dashboards for energy, OEE or maintenance</span></li>
+            </ul>
+            <a class="btn btn-ghost btn-sm" href="#book" data-package="Industrial Integration & Automation">Get a quote</a>
+          </article>
+          <article class="pkg">
+            <p class="pkg-k">06 · Advise</p>
+            <h3>Expert Review &amp; Project Rescue</h3>
+            <p class="pkg-for">For teams with a design to validate, or a project that is late, unstable or stuck.</p>
+            <div class="pkg-meta"><span class="tag">Typical: 1–2 weeks</span><span class="tag">Written report</span></div>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Firmware, schematic and architecture review</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Security and data-isolation assessment</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Root-cause analysis of field failures</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span>Prioritised fix list and recovery plan</span></li>
+            </ul>
+            <a class="btn btn-ghost btn-sm" href="#book" data-package="Expert Review & Project Rescue">Get a quote</a>
+          </article>
+        </div>
+        <p class="pkg-note">Durations are typical ranges; your quote is based on your scope. Need ongoing help instead? Ask about a monthly retainer as your fractional IoT lead.</p>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="section section-alt" id="case-studies">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">05 · Case studies</p>
+          <h2>Embedded and IoT systems I've delivered</h2>
+          <p class="section-sub">Projects I delivered as an engineer for my employers and as a freelancer, with full write-ups. <a class="link-arrow" style="margin-top:0" href="../#projects">See all 20+ projects <svg class="ico"><use href="#i-arrow"/></svg></a></p>
+        </header>
+        <div class="case-grid">
+          <a class="case case-text" href="../#work">
+            <div class="case-body">
+              <span class="p-cat">Multi-tenant platform · SmartData Technologies</span>
+              <h3>SmartSense IoT platform</h3>
+              <p>SmartData Technologies' platform for every sensor and actuator product: tenant isolation in four layers, an automation engine with approvals, and reconciliation after power cuts.</p>
+              <ul class="case-out"><li>440 automated tests</li><li>108 design decisions</li><li>~5 weeks to production</li></ul>
+              <span class="p-link">Read the summary <svg class="ico"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+          <a class="case" href="../projects/nfn-sen/">
+            <img src="../projects/nfn-sen/img/01.jpg" alt="NFN sensor buoy floating on a fish pond" width="1011" height="1200" loading="lazy" decoding="async">
+            <div class="case-body">
+              <span class="p-cat">Aquaculture · Nexus Fish Network</span>
+              <h3>Floating water-quality profiler</h3>
+              <p>Solar buoy measuring DO, pH, ORP, turbidity, TDS, temperature and level. v2 moved DO and pH to industrial RS-485 probes and removed the sampling pump.</p>
+              <ul class="case-out"><li>24/7 telemetry</li><li>100% off-grid</li><li>Zero moving parts (v2)</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+          <a class="case" href="../projects/nfn-sw/">
+            <img src="../projects/nfn-sw/img/02.jpg" alt="NFN switching unit enclosure with relay outputs" width="988" height="668" loading="lazy" decoding="async">
+            <div class="case-body">
+              <span class="p-cat">Aquaculture · Nexus Fish Network</span>
+              <h3>8-channel cloud-driven switching unit</h3>
+              <p>Runs aerators, feeders and pumps from live pond data over MQTT, with Oxygen-Demand logic instead of fixed timers.</p>
+              <ul class="case-out"><li>&lt;200 ms cloud-to-relay</li><li>~25% energy saved</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+          <a class="case" href="../projects/production-monitor/">
+            <img src="../projects/production-monitor/img/02.jpg" alt="Production monitor touchscreen and Android app on a garment line" width="1263" height="720" loading="lazy" decoding="async">
+            <div class="case-body">
+              <span class="p-cat">Manufacturing · Freelance</span>
+              <h3>Garment-line efficiency monitor</h3>
+              <p>ESP32 and FreeRTOS device showing live target-versus-actual output on a touchscreen, with voice alerts, SD logging, MQTT and an Android app.</p>
+              <ul class="case-out"><li>Real-time OEE</li><li>Power-loss recovery</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+          <a class="case" href="../projects/predictive-maintenance-bat/">
+            <img src="../projects/predictive-maintenance-bat/img/04.jpg" alt="Predictive maintenance edge server device" width="1280" height="1198" loading="lazy" decoding="async">
+            <div class="case-body">
+              <span class="p-cat">Industrial · Grit Technologies</span>
+              <h3>Predictive maintenance for BAT Bangladesh</h3>
+              <p>Vibration and temperature sensor nodes over RS-485 and Modbus to predict motor failures in a high-interference factory.</p>
+              <ul class="case-out"><li>Failure prediction</li><li>Industrial RS-485</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+          <a class="case" href="../projects/vehicle-safety/">
+            <img src="../projects/vehicle-safety/img/04.jpg" alt="Vehicle safety unit on a test rig with live data on a laptop" width="997" height="548" loading="lazy" decoding="async">
+            <div class="case-body">
+              <span class="p-cat">Safety · Embedded IoT</span>
+              <h3>Multi-sensor vehicle safety unit</h3>
+              <p>ESP32 unit that detects crashes, fire, gas leaks and temperature extremes, and sends SMS alerts with the GPS location.</p>
+              <ul class="case-out"><li>4 alert levels</li><li>GSM + GPS</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">06 · How we work</p>
+          <h2>A simple process with no surprises</h2>
+        </header>
+        <div class="steps">
+          <div class="step"><h3>Discovery call</h3><p>A 30-minute video call about your goals, site and constraints. You get honest advice even if we don't work together.</p></div>
+          <div class="step"><h3>Proposal &amp; quote</h3><p>A written scope with architecture, milestones, deliverables and a fixed quote, usually within a few days.</p></div>
+          <div class="step"><h3>Build in milestones</h3><p>Regular demos on real hardware and data. You see progress at every step and can change course early.</p></div>
+          <div class="step"><h3>Deploy &amp; hand over</h3><p>Field deployment, documentation and source files, plus support options for after launch.</p></div>
+        </div>
+        <div class="models">
+          <div class="model"><h3>Fixed-price milestones</h3><p>Best for well-defined builds. Pay per milestone as each one is delivered.</p></div>
+          <div class="model"><h3>Time &amp; materials</h3><p>Best for research, rescue work or changing requirements. Flexible scope, tracked transparently.</p></div>
+          <div class="model"><h3>Monthly retainer</h3><p>Best for ongoing product work. A fractional IoT lead for roadmap, reviews and mentoring.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">07 · FAQ</p>
+          <h2>Common questions</h2>
+        </header>
+        <div class="faq">
+          <details><summary>Do you work with clients outside Bangladesh?</summary><p>Yes. I have worked remotely with international clients since 2021. Design, firmware and platform work is fully remote, and hardware can be built and tested in Bangladesh and shipped, or sourced in your country.</p></details>
+          <details><summary>Do you only advise, or do you build too?</summary><p>Both. I can review and plan, or design the PCB, write the firmware, build the platform and support the field deployment myself.</p></details>
+          <details><summary>Can you work with our existing devices or cloud?</summary><p>Yes. I have integrated existing controllers over Modbus and BACnet, extend or fix existing firmware, and connect to the broker or cloud you already use instead of forcing a rebuild.</p></details>
+          <details><summary>How is a project priced?</summary><p>After the discovery call I send a written scope with a fixed quote per milestone. Open-ended work such as research or rescue can run on time and materials instead.</p></details>
+          <details><summary>Will you sign an NDA, and who owns the work?</summary><p>Yes, I'm happy to sign an NDA before we discuss details. Ownership of designs and source code is agreed in the proposal; by default, deliverables are handed over to you once paid.</p></details>
+          <details><summary>What do you need from me to get started?</summary><p>A short description of the problem, where the devices will run, roughly how many you need, and your timeline. Use the form below and I'll reply with a time for the discovery call.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="section" id="book">
+      <div class="container">
+        <div class="contact-card book">
+          <div class="contact-copy">
+            <p class="eyebrow">08 · Book a consultation</p>
+            <h2>Tell me about your project</h2>
+            <p class="lead">Share a few details and I'll reply within two working days with next steps and a time for a free 30-minute discovery call.</p>
+            <ul class="contact-list">
+              <li><a href="mailto:ramim.cse.uctc@gmail.com?subject=Consultation%20request"><span class="cl-ico"><svg class="ico"><use href="#i-mail"/></svg></span><span><small>E-mail</small>ramim.cse.uctc@gmail.com</span></a></li>
+              <li><a href="https://wa.me/8801836655062" target="_blank" rel="noopener"><span class="cl-ico"><svg class="ico"><use href="#i-chat"/></svg></span><span><small>WhatsApp</small>+880 1836-655062</span></a></li>
+              <li><a href="https://linkedin.com/in/ramim256" target="_blank" rel="noopener"><span class="cl-ico"><svg class="ico"><use href="#i-linkedin"/></svg></span><span><small>LinkedIn</small>linkedin.com/in/ramim256</span></a></li>
+            </ul>
+          </div>
+          <form class="book-form" id="book-form" novalidate>
+            <label>Your name<input name="name" type="text" autocomplete="name" required></label>
+            <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+            <label class="full"><span>Company <span style="font-weight:400;color:var(--muted)">(optional)</span></span><input name="company" type="text" autocomplete="organization"></label>
+            <label class="full">What do you need?
+              <select name="service" required>
+                <option>Not sure yet: help me choose</option>
+                <option>Discovery & Architecture Sprint</option>
+                <option>Prototype / Proof of Concept</option>
+                <option>Product Build: Pilot to Production</option>
+                <option>Multi-Tenant Platform & Data Pipeline</option>
+                <option>Industrial Integration & Automation</option>
+                <option>Expert Review & Project Rescue</option>
+                <option>Monthly retainer (fractional IoT lead)</option>
+                <option>Training or mentoring</option>
+              </select>
+            </label>
+            <label>Timeline
+              <select name="timeline">
+                <option>As soon as possible</option>
+                <option>Within 1–3 months</option>
+                <option>Within 3–6 months</option>
+                <option>Just exploring</option>
+              </select>
+            </label>
+            <label>Budget (USD)
+              <select name="budget">
+                <option>Not sure yet</option>
+                <option>Under $1,000</option>
+                <option>$1,000 – $5,000</option>
+                <option>$5,000 – $15,000</option>
+                <option>$15,000+</option>
+              </select>
+            </label>
+            <label class="full">Project details<textarea name="details" required placeholder="What should the system measure or control? Where will it run? How many devices?"></textarea></label>
+            <div class="full book-actions">
+              <button class="btn btn-primary" type="submit"><svg class="ico"><use href="#i-mail"/></svg> Send by e-mail</button>
+              <button class="btn btn-ghost" type="button" id="book-whatsapp"><svg class="ico"><use href="#i-chat"/></svg> Send on WhatsApp</button>
+              <span class="book-hint">Opens your e-mail app or WhatsApp with the message ready to send.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../">Home</a> · <a href="../#projects">Projects</a> · <a href="#book">Book a consultation</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/project.js" defer></script>
+  <script src="../assets/js/consulting.js" defer></script>
+</body>
+</html>

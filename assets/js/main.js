@@ -41,7 +41,7 @@
   }, { passive: true });
 
   /* ---------- Scroll spy ---------- */
-  var links = Array.prototype.slice.call(navLinks.querySelectorAll('a'));
+  var links = Array.prototype.slice.call(navLinks.querySelectorAll('a[href^="#"]'));
   var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
   if ('IntersectionObserver' in window) {
     var spy = new IntersectionObserver(function (entries) {

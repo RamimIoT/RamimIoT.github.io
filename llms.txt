@@ -13,6 +13,12 @@ Sakiul Mowla Ramim is a Lead IoT Engineer at SmartData Technologies Limited in B
 - [GitHub](https://github.com/RamimIoT)
 - [YouTube: IoTWithRamim](https://www.youtube.com/@IoTWithRamim)
 
+## Consulting
+
+- [IoT consulting services](https://ramimiot.github.io/consulting/): end-to-end IoT product development, embedded firmware, PCB design, industrial automation (Modbus, BACnet), multi-tenant IoT platforms and secure data pipelines; six service packages, case studies and a booking form
+- Services: End-to-end IoT product development; Embedded firmware; Hardware & PCB design; Industrial automation & IIoT; Wireless connectivity; Multi-tenant IoT platforms; Secure data pipelines; Dashboards, alerts & apps; Edge AI & computer vision; Architecture review & audits; Deployment & fleet operations; Fractional IoT lead & training
+- Packages: Discovery & Architecture Sprint; Prototype / Proof of Concept; Product Build: Pilot to Production; Multi-Tenant Platform & Data Pipeline; Industrial Integration & Automation; Expert Review & Project Rescue
+
 ## Projects
 
 - [Smart Aquaculture Ecosystem](https://ramimiot.github.io/projects/aquaculture/): End-to-end IoT ecosystem for precision fish farming: ESP32 sensing, switching and laser-repellent units on a unified MQTT API, solar powered and OTA managed.
